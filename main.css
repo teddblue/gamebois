@@ -4,7 +4,7 @@
     --color3: #346856;
     --color4: #081820;
 }
-h1 {
+head {
     margin: auto;
     background-color: var(--color3);
     text-transform: uppercase;
@@ -12,7 +12,7 @@ h1 {
     font-family: 'Press Start 2P';
     text-align: center;
 }
-p {
+body {
     margin: 1;
     background-color: var(--color1);
     color: var(--color4);
