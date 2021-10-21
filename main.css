@@ -12,7 +12,7 @@ h1 {
     font-family: 'Press Start 2P';
     text-align: center;
 }
-body {
+p {
     margin: 1;
     background-color: var(--color1);
     color: var(--color4);
