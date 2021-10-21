@@ -9,6 +9,7 @@ h1 {
     background-color: var(--color3);
     text-transform: uppercase;
     color: var(--color1);
+    font-family: 'Press Start 2P', cursive;
 }
 body {
     margin: 1;
