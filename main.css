@@ -6,7 +6,6 @@
 }
 h1 {
     margin: auto;
-    height: .5;
     background-color: var(--color3);
     text-transform: uppercase;
     color: var(--color1);
