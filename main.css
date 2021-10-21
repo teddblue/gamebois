@@ -16,6 +16,6 @@ body {
     margin: 1;
     background-color: var(--color1);
     color: var(--color4);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
     text-align: center;
 }
