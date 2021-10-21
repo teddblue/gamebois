@@ -9,7 +9,7 @@ head {
     background-color: var(--color3);
 }
 body {
-    margin: auto;
+    margin: 1;
     background-color: var(--color1);
     color: var(--color4);
     text-align: center;
