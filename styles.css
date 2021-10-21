@@ -6,11 +6,13 @@
 }
 head {
     margin: auto;
-    background: var(--color2);
+    background-color: var(--color2);
 }
 body {
     margin: auto;
-    background: var(--color4);
+    background-color: var(--color4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color4);
     text-align: center;
     text-decoration-color: var(--color1);
 }
