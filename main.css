@@ -4,18 +4,18 @@
     --color3: #346856;
     --color4: #081820;
 }
-head {
+h1 {
     margin: auto;
     background-color: var(--color3);
     text-transform: uppercase;
     color: var(--color1);
-    font-family: 'Press Start 2P';
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 body {
     margin: 1;
     background-color: var(--color1);
     color: var(--color4);
-    font-family: 'Courier New';
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
