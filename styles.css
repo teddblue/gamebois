@@ -1,5 +1,16 @@
+:root {
+    --color1: #081820;
+    --color2: #346856;
+    --color3: #88c070;
+    --color4: #e0f8d0;
+}
+head {
+    margin: auto;
+    background: var(--color2);
+}
 body {
-    margin: 0;
-    background: pink;
+    margin: auto;
+    background: var(--color4);
     text-align: center;
+    text-decoration-color: var(--color1);
 }
