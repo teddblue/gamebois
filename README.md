@@ -6,4 +6,4 @@ once apon a time, cool math games was blocked at my school. now im obviously a s
 
 # here are the links:
 github version (work in progress): https://teddblue.github.io/gamebois/
-google sites version: https://sites.google.com/view/game-bois/home
+google sites version (current supported version): https://sites.google.com/view/game-bois/home
