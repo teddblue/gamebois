@@ -4,9 +4,11 @@
     --color3: #346856;
     --color4: #081820;
 }
-head {
+h1 {
     margin: auto;
     background-color: var(--color3);
+    text-transform: uppercase;
+    color: var(--color1);
 }
 body {
     margin: 1;
