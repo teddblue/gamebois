@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Hind:300,500);
-@import url(//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url(http://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
     --color1: #e0f8d0;
     --color2: #88c070;
@@ -12,7 +13,7 @@ h1 {
     height: 100px;
     text-transform: uppercase;
     color: var(--color2);
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', 'Courier New', Courier;
     text-align: center;
     font-size: 50px;
 }
