@@ -14,7 +14,7 @@ h1 {
     height: 100px;
     /*text-transform: uppercase;*/
     color: var(--color2);
-    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    /*font-family: 'Press Start 2P', 'Courier New', Courier, monospace;*/
     text-align: center;
     font-size: 50px;
 }
@@ -26,5 +26,7 @@ body {
     text-align: center;
 }
 a {
-    color: var(--color5);
+    background-color: var(--color4)
+    color: var(--color1);
+    text-decoration: none;
 }
