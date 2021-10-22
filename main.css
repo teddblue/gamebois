@@ -7,7 +7,7 @@
     --color3: #346856;
     --color4: #081820;
 }
-h1 {
+head {
     margin: auto;
     background-color: var(--color4);
     height: 100px;
