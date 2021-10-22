@@ -34,6 +34,6 @@ body {
     font-size: 25px;
 }
 a {
-    background-color: var(--color4)
+    background-color: var(--color4);
     color: var(--color1);
 }
