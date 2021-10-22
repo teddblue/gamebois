@@ -10,7 +10,7 @@ h1 {
     margin: auto;
     background-color: var(--color4);
     height: 200px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: var(--color2);
     font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
     text-align: center;
