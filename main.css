@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+style {
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
 :root {
     --color1: #e0f8d0;
     --color2: #88c070;
