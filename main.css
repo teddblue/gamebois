@@ -9,10 +9,11 @@ style {
     --color5: #00ffff;
 }
 h1 {
+    @import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
     margin: auto;
     background-color: var(--color4);
     height: 100px;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     color: var(--color2);
     /*font-family: 'Press Start 2P', 'Courier New', Courier, monospace;*/
     text-align: center;
@@ -28,5 +29,4 @@ body {
 a {
     background-color: var(--color4)
     color: var(--color1);
-    text-decoration: none;
 }
