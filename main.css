@@ -8,12 +8,13 @@
 }
 h1 {
     margin: auto;
-    background-color: var(--color3);
+    background-color: var(--color4);
+    height: 100px;
     text-transform: uppercase;
-    color: var(--color1);
+    color: var(--color2);
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    font-size: 50;
+    font-size: 50px;
 }
 body {
     margin: 1;
