@@ -19,13 +19,21 @@ h1 {
     text-align: center;
     font-size: 100px;
 }
-body {
+h2 {
     margin: auto;
     background-color: var(--color1);
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 50px;
+}
+body {
+    margin: auto;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
 }
 a {
     background-color: var(--color4)
