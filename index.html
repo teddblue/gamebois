@@ -49,9 +49,13 @@
             {
                 var text = raincode[Math.floor(Math.random()*raincode.length)];
                 cfx.fillText(text, i * font_size, drops[i]*font_size);
+                if(drops[i] * font_size > c.heigh && Math.random() > 0.975)
+                drops[i] = 0;
+                drops[i] ++;
+
             }
         }
-
+        setInterval(draw, 33);
     </script>
 </body>
 </html>
