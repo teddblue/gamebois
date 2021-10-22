@@ -6,7 +6,7 @@
     --color3: #346856;
     --color4: #081820;
 }
-head {
+h1 {
     margin: auto;
     background-color: var(--color4);
     height: 100px;
@@ -17,7 +17,7 @@ head {
     font-size: 50px;
 }
 body {
-    margin: 1;
+    margin: auto;
     background-color: var(--color1);
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
