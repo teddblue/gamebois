@@ -25,7 +25,7 @@ h2 {
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
 }
 body {
     margin: auto;
@@ -33,7 +33,7 @@ body {
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 10px;
+    font-size: 25px;
 }
 a {
     background-color: var(--color4)
