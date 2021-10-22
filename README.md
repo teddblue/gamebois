@@ -1,4 +1,6 @@
 # gamebois
+![Site Logo](/gamebois/docs/assets/images/gameboislogo512.gif)
+
 an online gaming collection, a work in progress. the google site is the original and current version. the github site will be ready soon.
 
 # story:
