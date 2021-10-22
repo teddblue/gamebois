@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+
 :root {
     --color1: #e0f8d0;
     --color2: #88c070;
@@ -7,6 +9,9 @@
     --color4: #081820;
 }
 h1 {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     margin: auto;
     background-color: var(--color3);
     text-transform: uppercase;
