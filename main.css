@@ -5,12 +5,13 @@
     --color2: #88c070;
     --color3: #346856;
     --color4: #081820;
+    --color5: #00ffff;
 }
 h1 {
     margin: auto;
     background-color: var(--color4);
     height: 100px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: var(--color2);
     font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
     text-align: center;
@@ -22,4 +23,7 @@ body {
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+a {
+    color: var(--color5);
 }
