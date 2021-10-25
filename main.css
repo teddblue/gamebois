@@ -33,4 +33,5 @@ body {
 }
 a {
     color: var(--color3);
+    text-decoration: none;
 }
