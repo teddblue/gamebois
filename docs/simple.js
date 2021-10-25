@@ -10,7 +10,7 @@
 "use strict";
 
 // User configurable.
-const ROM_FILENAME = 'gamebois/games/GBC/Tetris (World) (Rev 1).gb';
+const ROM_FILENAME = 'https://github.com/teddblue/gamebois/blob/main/games/GBC/Tetris%20(World)%20(Rev%201).gb';
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
