@@ -9,3 +9,9 @@ once apon a time, cool math games was blocked at my school. now im obviously a s
 # here are the links:
 github version (work in progress): https://teddblue.github.io/gamebois/
 google sites version (current supported version): https://sites.google.com/view/game-bois/home
+
+#art
+![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png | width = 64)
+![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png | width = 64)
+![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png | width = 64)
+![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png | width = 64)
