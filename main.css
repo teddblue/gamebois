@@ -35,3 +35,13 @@ a {
     color: var(--color3);
     text-decoration: none;
 }
+.button {
+    background-color: var(--color4); /* Green */
+    border: none;
+    color: var(--color1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
