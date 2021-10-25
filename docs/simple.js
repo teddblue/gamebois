@@ -10,7 +10,7 @@
 "use strict";
 
 // User configurable.
-const ROM_FILENAME = '/gamebois/games/GBC/Tetris (World) (Rev 1).gb';
+const ROM_FILENAME = 'https://vimm.net/vault/4129';
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
