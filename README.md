@@ -12,8 +12,8 @@ google sites version (current supported version): https://sites.google.com/view/
 
 # art:
 ![GB](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png)
+<img src="https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png" width="64">
+
 ![GBA](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png)
 ![NES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png)
 ![SNES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png)
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png =250x250)
