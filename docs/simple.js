@@ -9,8 +9,10 @@
  */
 "use strict";
 
+const color = new URLSearchParams(window.location.search).get('color')
+
 // User configurable.
-const ROM_FILENAME = '/gamebois/games/GBC/Tetris (World) (Rev 1).gb';
+const ROM_FILENAME = color;
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
