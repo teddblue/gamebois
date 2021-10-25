@@ -15,8 +15,3 @@ google sites version (current supported version): https://sites.google.com/view/
 ![GBA](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png)
 ![NES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png)
 ![SNES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png)
-
-<img src="https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png" width="512">
-<img src="https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png" width="512">
-<img src="https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png" width="512">
-<img src="https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png" width="512">
