@@ -35,7 +35,7 @@ a {
     color: var(--color3);
     text-decoration: none;
 }
-.button {
+button {
     background-color: var(--color4); /* Green */
     border: none;
     color: var(--color1);
