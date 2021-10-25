@@ -11,7 +11,7 @@ github version (work in progress): https://teddblue.github.io/gamebois/
 google sites version (current supported version): https://sites.google.com/view/game-bois/home
 
 # art:
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png=64x64)
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png)
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png)
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png)
+![GB](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png)
+![GBA](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png)
+![NES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png)
+![SNES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png)
