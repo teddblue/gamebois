@@ -1,5 +1,5 @@
 # gamebois
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/gameboislogo512.gif)
+![Site Logo](https://github.com/teddblue/gamebois/blob/main/imageAssets/gameboislogo512.gif)
 
 an online gaming collection, a work in progress. the google site is the original and current version. the github site will be ready soon.
 
@@ -11,7 +11,7 @@ github version (work in progress): https://teddblue.github.io/gamebois/
 google sites version (current supported version): https://sites.google.com/view/game-bois/home
 
 # art:
-![GB](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GB-32x32.png)
-![GBA](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/GBA-32x32.png)
-![NES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/NES-32x32.png)
-![SNES](https://github.com/teddblue/gamebois/blob/main/docs/assets/images/SNES-32x32.png)
+![GB](https://github.com/teddblue/gamebois/blob/main/imageAssets/GB-256x256.png)
+![GBA](https://github.com/teddblue/gamebois/blob/main/imageAssets/GBA-256x256.png)
+![NES](https://github.com/teddblue/gamebois/blob/main/imageAssets/NES-256x256.png)
+![SNES](https://github.com/teddblue/gamebois/blob/main/imageAssets/SNES-256x256.png)
