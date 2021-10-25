@@ -10,7 +10,7 @@
 "use strict";
 
 // User configurable.
-const ROM_FILENAME = 'https://github.com/teddblue/gamebois/blob/main/games/GBC/Pokemon%20-%20Blue%20Version%20(USA%2C%20Europe)%20(SGB%20Enhanced).gb';
+const ROM_FILENAME = 'gamebois/games/GBC/Tetris (World) (Rev 1).gb';
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
