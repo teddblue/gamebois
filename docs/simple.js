@@ -10,14 +10,14 @@
 "use strict";
 
 var directory = "gamebois/games/GBC/";
-var url = window.location.href
-var data = url.split('#')
-var game = directory + data[1] + "." + data[2]
+const name = new URLSearchParams(window.location.search).get('game')
+const type = new URLSearchParams(window.location.search).get('type')
+let game = directory + game + "." + type
 
 // User configurable.
 const ROM_FILENAME = game;
 const ENABLE_REWIND = true;
-const ENABLE_PAUSE = false;
+const ENABLE_PAUSE = true;
 const ENABLE_SWITCH_PALETTES = true;
 const OSGP_DEADZONE = 0.1;    // On screen gamepad deadzone range
 const CGB_COLOR_CURVE = 2;    // 0: none, 1: Sameboy "Emulate Hardware" 2: Gambatte/Gameboy Online
