@@ -14,7 +14,7 @@ const gbimages = [
 
 const url = "/gamebois/imageAssets/gameboislogo512.gif"
 if (type === 'gb') {
-    
+    url = "http://thumbnails.libretro.com/" + "/Nintendo%20-%20Game%20Boy/Named_Boxarts/" + String(gbimages[gb.indexOf(game)])
     if (gb.includes(String(game))) {
         url = "http://thumbnails.libretro.com/" + "/Nintendo%20-%20Game%20Boy/Named_Boxarts/" + String(gbimages[gb.indexOf(game)])
     }
