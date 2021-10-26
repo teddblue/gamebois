@@ -9,9 +9,9 @@
  */
 "use strict";
 
-var directory = "gamebois/games/GBC/"
-const game = new URLSearchParams(window.location.search).get('game');
-var data = game.split("-");
+var directory = "gamebois/games/GBC/";
+const str = new URLSearchParams(window.location.search).get('game');
+var data = str.split("-");
 
 // User configurable.
 const ROM_FILENAME = directory + data[1] + "." + data[0];
