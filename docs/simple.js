@@ -9,10 +9,12 @@
  */
 "use strict";
 
-const color = new URLSearchParams(window.location.search).get('color')
+var directory = "gamebois/games/GBC/"
+const game = new URLSearchParams(window.location.search).get('game');
+var data = game.split("-");
 
 // User configurable.
-const ROM_FILENAME = color;
+const ROM_FILENAME = directory + data[1] + "." + data[0];
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
