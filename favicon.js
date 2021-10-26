@@ -13,3 +13,5 @@ if (type === 'gb') {
     }
 }
 favicon.href = url;
+
+zzxnv
