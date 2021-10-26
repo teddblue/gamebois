@@ -15,7 +15,7 @@ const gbimages = [
 var url = "/gamebois/imageAssets/gameboislogo512.gif";
 if (type === 'gb') {
     if (gb.includes(String(game))) {
-        url = "/gamebois/imageAssets/covers" + "/gb/" + game + ".png";
+        url = "/gamebois/imageAssets" + "/gb/" + game + ".png";
     }
 }
 favicon.href = url;
