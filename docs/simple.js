@@ -12,9 +12,10 @@
 var directory = "gamebois/games/GBC/";
 const str = new URLSearchParams(window.location.search).get('game');
 var data = str.split("-");
+var game = directory + data[1] + "." + data[0];
 
 // User configurable.
-const ROM_FILENAME = directory + data[1] + "." + data[0];
+const ROM_FILENAME = game;
 const ENABLE_REWIND = true;
 const ENABLE_PAUSE = false;
 const ENABLE_SWITCH_PALETTES = true;
