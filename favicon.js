@@ -2,7 +2,10 @@ let favicon = document.querySelector("[rel=icon]")
 const title = new URLSearchParams(window.location.search).get('game')
 const type = new URLSearchParams(window.location.search).get('type')
 
-url = "/gamebois/imageAssets/" + type + "/" + title + ".png";
+if (title){
+    url = "/gamebois/imageAssets/" + type + "/" + title + ".png";
+}
+
 /*games list*/
 /*const gb = ['tetris', 'pokemon-red', 'pokemon-blue']
 
