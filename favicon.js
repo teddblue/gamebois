@@ -12,7 +12,7 @@ const gbimages = [
     'Pokemon%20-%20Blue%20Version%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29.png'
 ]
 
-var url = "gamebois/imageAssets/gameboislogo512.gif"
+var url = "/gamebois/imageAssets/gameboislogo512.gif"
 if (type === 'gb') {
     if (gb.includes(String(game))) {
         url = "http://thumbnails.libretro.com" + "/Nintendo%20-%20Game%20Boy/Named_Boxarts/" + String(gbimages[gb.indexOf(game)])
