@@ -34,11 +34,12 @@ body {
 a {
     color: var(--color3);
     text-decoration: none;
+    img {
+        max-width: 256px;
+        height: auto;
+    }
 }
-img {
-    width: 256px;
-    height: auto
-}
+
 button {
     background-color: var(--color4); /* Green */
     border: none;
