@@ -1,4 +1,4 @@
-const favicon = document.querySelector("[rel=icon]")
+let favicon = document.querySelector("[rel=icon]")
 const game = new URLSearchParams(window.location.search).get('game')
 const type = new URLSearchParams(window.location.search).get('type')
 
