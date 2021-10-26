@@ -35,7 +35,7 @@ const CGB_COLOR_CURVE = 2;    // 0: none, 1: Sameboy "Emulate Hardware" 2: Gamba
 //   const DEFAULT_PALETTE_IDX = 1;
 //   const PALETTES = [16, 32, 64];
 //
-const DEFAULT_PALETTE_IDX = 0;
+const DEFAULT_PALETTE_IDX = 56;
 const PALETTES = [
   0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 15, 16,
   17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
