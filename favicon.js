@@ -3,8 +3,8 @@ const title = new URLSearchParams(window.location.search).get('title')
 const console = new URLSearchParams(window.location.search).get('type')
 
 /*url = "/gamebois/imageAssets/" + type + "/" + title + ".png";*/
-/*games list*/
-const gb = ['tetris', 'pokemon-red', 'pokemon-blue']
+
+const gb = ['tetris', 'pokemon-red', 'pokemon-blue', 'links-awakening-dx', 'metroid-ii-return-of-samus']
 
 var url = "/gamebois/imageAssets/gameboislogo512.gif";
 if (console === 'gb') {
