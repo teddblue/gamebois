@@ -19,9 +19,8 @@ if (type === 'gb') {
     }
 }
 
-/*var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
 link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
 link.href = 'http://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy/Named_Boxarts/Tetris%20%28World%29%20%28Rev%201%29.png';
-document.getElementsByTagName('head')[0].appendChild(link);*/
-favicon.href = url;
+document.getElementsByTagName('head')[0].appendChild(link);
