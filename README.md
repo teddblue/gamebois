@@ -1,3 +1,11 @@
+<style>
+  img {
+    width: 256px;
+    height: auto;
+    image-rendering: pixelated;
+  }
+</style>
+  
 # gamebois
 ![Site Logo](https://github.com/teddblue/gamebois/blob/main/imageAssets/gameboislogo512.gif)
 
