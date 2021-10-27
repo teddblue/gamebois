@@ -25,6 +25,6 @@ github version (work in progress): https://teddblue.github.io/gamebois/ \
 google sites version (current supported version): https://sites.google.com/view/game-bois/home
 
 # art:
-![GB](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GB-32x32.png)\
-![GBC](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBC-32x32.png)\
-![GBA](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBA-32x32.png)
+<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GB-32x32.png" width="256">\
+<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBC-32x32.png" width="256">\
+<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBA-32x32.png" width="256">
