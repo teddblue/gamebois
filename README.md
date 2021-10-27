@@ -1,11 +1,3 @@
-<style>
-  img {
-    width: 256px;
-    height: auto;
-    image-rendering: pixelated;
-  }
-</style>
-  
 # gamebois
 ![Site Logo](https://github.com/teddblue/gamebois/blob/main/imageAssets/gameboislogo512.gif)
 
@@ -31,8 +23,3 @@ once apon a time, cool math games was blocked at my school. now im obviously a s
 # here are the links:
 github version (work in progress): https://teddblue.github.io/gamebois/ \
 google sites version (current supported version): https://sites.google.com/view/game-bois/home
-
-# art:
-<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GB-32x32.png" width="256">\
-<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBC-32x32.png" width="256">\
-<img src="https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBA-32x32.png" width="256">
