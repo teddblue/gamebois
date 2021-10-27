@@ -27,4 +27,4 @@ google sites version (current supported version): https://sites.google.com/view/
 # art:
 ![GB](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GB-32x32.png)\
 ![GBC](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBC-32x32.png)\
-![GBA](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBA-32x32.png)\
+![GBA](https://github.com/teddblue/gamebois/blob/main/imageAssets/consoles/GBA-32x32.png)
