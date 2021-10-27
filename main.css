@@ -37,7 +37,8 @@ a {
 }
 img {
     width: 256px;
-    height: auto
+    height: auto;
+    image-rendering: pixelated;
 }
 button {
     background-color: var(--color4); /* Green */
