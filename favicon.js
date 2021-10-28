@@ -9,7 +9,7 @@ const gb = ['tetris', 'pokemon-red', 'pokemon-blue', 'links-awakening-dx', 'metr
 var url = "/gamebois/imageAssets/gameboislogo512.gif";
 if (console === 'gb') {
     if (gb.includes(String(game))) {
-        url = "/gamebois/imageAssets" + "/gb/" + title + ".png";
+        url = "/gamebois/imageAssets/" + type + "/" + title + ".png";
     }
 }
 favicon.href = url;
