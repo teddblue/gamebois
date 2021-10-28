@@ -12,7 +12,7 @@
 var directory = "/gamebois/games/";
 const gamename = new URLSearchParams(window.location.search).get('game')
 const type = new URLSearchParams(window.location.search).get('type')
-const game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
+const game = String(directory) + String(type).toUpperCase() + "/" + String(gamename) + "." + String(type)
 
 // User configurable.
 const ROM_FILENAME = game;
