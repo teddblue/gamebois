@@ -13,11 +13,11 @@
           </div>
           
     <script type="text/javascript">
-        let blob = new Blob(gamebois/games/gb/tetris.gb)
-        let url = URL.createObjectURL(blob)
+        let blob = new Blob();
+        let url = URL.createObjectURL(blob);
         EJS_player = '#game';
         EJS_biosUrl = '';
-        EJS_gameUrl = url; // Url to Game rom
+        EJS_gameUrl = 'https://github.com/teddblue/gamebois/blob/363e3e83a20defd41343735d37eda374cc088130/games/gb/tetris.gb'; // Url to Game rom
         EJS_core = 'gb';
     </script>
     <script src="https://www.emulatorjs.com/loader.js"></script>
