@@ -8,5 +8,17 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
+        <div style="width:640px;height:480px;max-width:100%">
+        <div id="game"></div>
+      </div>
+<script type="text/javascript">
+    EJS_player = '#game';
+    EJS_biosUrl = '';
+    EJS_gameUrl = 'https://github.com/teddblue/gamebois/blob/main/games/GB/tetris.gb'; // Url to Game rom
+    EJS_core = 'gb';
+    EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
+</script>
+<script src="https://github.com/teddblue/emulatorjs/blob/main/data/emulator.js"></script>
+        
     </body>
 </html>
