@@ -1,4 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-</html>
+    <head>
+        <title>GBA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="js/util.js"></script>
+        <script src="js/core.js"></script>
+        <script src="js/arm.js"></script>
+        <script src="js/thumb.js"></script>
+        <script src="js/mmu.js"></script>
+        <script src="js/io.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/video/proxy.js"></script>
+        <script src="js/video/software.js"></script>
+        <script src="js/irq.js"></script>
+        <script src="js/keypad.js"></script>
+        <script src="js/sio.js"></script>
+        <script src="js/savedata.js"></script>
+        <script src="js/gpio.js"></script>
+        <script src="js/gba.js"></script>
+<!-- 
+    This file is optional as it only is a function to load the ROM 
+    But the function loadRom needs to exist !
+-->
+        <script src="resources/xhr.js"></script>
+        <script>
+        /**
+        * Loads the ROM from a file using ajax
+        * 
+        * @param url 
+        * @param callback 
+        */
+        function loadRom(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.responseType = 'arraybuffer';
+
+            xhr.onload = function() { 
+                callback(xhr.response) 
+            };
+
+            xhr.send();
+        }
+        </script>
+
+    </head>
+    <body>
+        <!-- Screen of the GBA.js -->
+        <canvas id="screen" width="480" height="320"></canvas>
+
+        <!-- Start Controls -->
+        <div id="controls">
+			<!-- Start App controls -->
+			<h4>App Controls</h4>
+			<div id="preload">
+				<button id="select"> Select ROM file </button>
+				<input id="loader" type="file" accept=".gba" />
+				<button id="select-savegame-btn">Upload Savegame</button>
+				<input id="saveloader" type="file" />
+			</div>
+			<!-- End App controls -->
+			<br>
+			<!-- Start ingame controls -->
+			<h4>In-game controls</h4>
+			<div id="ingame" class="hidden">
+				<button id="pause">Pause game</button>
+				<button id="reset-btn">Reset</button>
+				<button id="download-savegame">Download Savegame File</button>
+
+				<div id="sound">
+					<p>Audio enabled</p>
+					<input type="checkbox" id="audio-enabled-checkbox" checked="checked" />
+					<p>Change sound level</p>
+					<input id="volume-level-slider" type="range" min="0" max="1" value="1" step="any" />
+				</div>
+			</div>
+			<!-- End ingame controls -->
+		</div>
+		<!-- End Controls -->
+    </body>
+</html>	
