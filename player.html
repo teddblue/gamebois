@@ -16,10 +16,11 @@
             const gamename = new URLSearchParams(window.location.search).get('game')
             const type = new URLSearchParams(window.location.search).get('type')
             
+            var game = ""
             if (type = nds) {
-                var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
+                game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
             } else {
-                var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
+                game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
             }
             
             EJS_player = '#game';
