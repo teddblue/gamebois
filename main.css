@@ -42,24 +42,24 @@ img {
 }
 
 .container {
-  font-family: arial;
-  font-size: 24px;
-  margin: 25px;
-  width: 350px;
-  height: 200px;
-  /* Setup */
-  position: relative;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
 }
-.child {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.game {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
 }
+.boxart {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
 
 button {
     background-color: var(--color4); /* Green */
