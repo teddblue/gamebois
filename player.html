@@ -11,6 +11,9 @@
         <div class="container" style="width:640px; height:480px; max-width:100%">
             <div class="game" id="game"></div>
         </div>
+        <div id="boxart"></div>
+        
+        <img alt="GBC-Link's Awakening DX" src="/gamebois/imageAssets/gbc/links-awakening-dx.png">
         <script type="text/javascript">
             var directory = "games/";
             const gamename = new URLSearchParams(window.location.search).get('game')
@@ -23,6 +26,12 @@
                 var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
             }
             
+            var boxart = document.createElement("img");
+            boxart.src = "imageAssets/" + type + "/" + gamename + ".png";
+
+            var div = document.getElementById("boxart");
+            div.appendChild(boxart);
+            //block.setAttribute("style", "text-align:center");
             
             EJS_player = '#game';
             EJS_biosUrl = '';
