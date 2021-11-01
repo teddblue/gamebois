@@ -9,7 +9,6 @@
     </head>
     <body>
         <div class="container" style="margin:auto; width:640px; height:480px; max-width:100%">
-            <div id="boxart"></div>
             <div class="game" id="game"></div>
         </div>
         
@@ -24,13 +23,6 @@
             } else {
                 var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
             }
-            
-            var boxart = document.createElement("img");
-            boxart.src = "imageAssets/" + type + "/" + gamename + ".png";
-
-            var div = document.getElementById("boxart");
-            div.appendChild(boxart);
-            //block.setAttribute("style", "text-align:center");
             
             EJS_player = '#game';
             EJS_biosUrl = '';
