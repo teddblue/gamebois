@@ -15,11 +15,7 @@
             var directory = "games/";
             const gamename = new URLSearchParams(window.location.search).get('game')
             var type = new URLSearchParams(window.location.search).get('type')
-            var end = type
-            if (end = "nds") {
-                end = "zip"
-            }
-            var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(end)
+            var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
             
             EJS_player = '#game';
             EJS_biosUrl = '';
