@@ -40,9 +40,28 @@ img {
     height: auto;
     image-rendering: pixelated;
 }
-canvas {
-    text-align: center;
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  /* Setup */
+  position: relative;
 }
+.child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 button {
     background-color: var(--color4); /* Green */
     border: none;
