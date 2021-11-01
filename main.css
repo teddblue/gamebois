@@ -47,7 +47,6 @@ img {
   margin: 25px;
   width: 350px;
   height: 200px;
-  outline: dashed 1px black;
   /* Setup */
   position: relative;
 }
