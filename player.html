@@ -14,14 +14,11 @@
         <script type="text/javascript">
             var directory = "games/";
             const gamename = new URLSearchParams(window.location.search).get('game')
-            const type = new URLSearchParams(window.location.search).get('type')
-            
-            var game = ""
+            var type = new URLSearchParams(window.location.search).get('type')
             if (type = "nds") {
-                game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
-            } else {
-                game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
+                type = "zip"
             }
+            var game = String(directory) + String(type) + "/" + String(gamename) + "." + String(type)
             
             EJS_player = '#game';
             EJS_biosUrl = '';
