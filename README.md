@@ -4,18 +4,17 @@
 an online gaming collection, a work in progress. the google site is the original and current version. the github site will be ready soon.
 
 # updates:
--clicking the GBA will send you to the gamebois google site.\
--clicking the GB or GBC will send you to the GB or GBC page, respectively.\
--images are now downloaded to the repository from libretro instead of a direct link.\
--GB/GBC emulation done on-site (special thanks to binjgb by binji).
+-all emulation now done on-site with ethanobrien's port of emulatorjs.\
+-above allows a plethora of consoles to be playable
 
 # upcoming updates:
--increasing libraries for GB and GBC.\
--creating GBA library.
+
+-increasing libraries for GB, GBC, and GBA.\
+-adding a 'freeplay' mode: upload your own roms.\
+-nds?...
 
 # ideas:
--set up a system for user to get any game off of vimm's lair (if its unblocked for them).\
--find a ds emulator that can run on my site.
+-set up a system for user to get any game off of vimm's lair (if its unblocked for them).
 
 # story:
 once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit.
