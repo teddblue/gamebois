@@ -5,13 +5,12 @@ an online gaming collection, a work in progress. the google site is the original
 
 # updates:
 -all emulation now done on-site with ethanobrien's port of emulatorjs.\
--above allows a plethora of consoles to be playable
+-above allows a plethora of consoles to be playable.\
+-all games are now zipped, slightly longer load times for smaller file size
 
 # upcoming updates:
-
 -increasing libraries for GB, GBC, and GBA.\
--adding a 'freeplay' mode: upload your own roms.\
--nds?...
+-adding a 'freeplay' mode: upload your own roms.
 
 # ideas:
 -set up a system for user to get any game off of vimm's lair (if its unblocked for them).
