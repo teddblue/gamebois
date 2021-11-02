@@ -16,7 +16,7 @@
             var directory = "games/";
             const gamename = new URLSearchParams(window.location.search).get('game')
             const type = new URLSearchParams(window.location.search).get('type')
-            const zippedGames = ["nds"]
+            const zippedGames = ["nds", "gb"]
             
             if (zippedGames.includes(type)) {
                 var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
