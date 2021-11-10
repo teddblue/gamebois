@@ -21,5 +21,4 @@ once apon a time, cool math games was blocked at my school. now im obviously a s
 
 # here are the links:
 github version (current version): https://teddblue.github.io/gamebois/ \
-netify app (alternate url): https://gamebois.netlify.app \
 google sites version (old version): https://sites.google.com/view/game-bois/home
