@@ -1,9 +1,6 @@
 # gamebois
 ![Site Logo](https://github.com/teddblue/gamebois/blob/main/imageAssets/gameboislogo512.gif)
 
-! everything in github.io has been catagorized as games on lightspeed filters and will be blocked on some devices, we are currently fixing the problem!
-an online gaming collection, a work in progress. the google site is the original and current version. the github site will be ready soon.
-
 # updates:
 -gitlab alternate site.\
 -freeplay mode.
