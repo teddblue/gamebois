@@ -1,6 +1,5 @@
 # gamebois
 ![Site Logo](/imageAssets/gameboislogo512.gif)
-![Site Logo](https://github.com/teddblue/gamebois/blob/main/imageAssets/gameboislogo512.gif)
 
 # updates:
 -gitlab alternate site.\
