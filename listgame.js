@@ -21,3 +21,5 @@ function listgame(console) {
         document.body.appendChild(a)
     }
 }
+
+listgame(gb)
