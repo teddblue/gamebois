@@ -22,4 +22,4 @@ function listgame(console) {
     }
 }
 
-listgame(gb)
+listgame("gb")
