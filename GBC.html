@@ -21,6 +21,7 @@
     
     <br>
 
+    <!--
     <a href="freeplay.html?type=gbc" target="_blank" rel="noopener noreferrer">
          <img alt="GB" src="/gamebois/imageAssets/consoles/GBC.png">
     </a>
@@ -40,7 +41,31 @@
     <a href="player.html?game=pokemon-crystal&type=gbc">
       <img alt="GBC-Pokemon Crystal" src="/gamebois/imageAssets/gbc/pokemon-crystal.png">
     </a>
-    
+  -->
+
+    <script>
+      var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"];
+      var console = "gbc";
+
+      //add image links to games
+      for (let i = 0; i < gameslist.length; i++) {
+        var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+
+        const a = document.createElement("a");
+        a.setAttribute("href", link);
+
+        const img = new Image();
+        img.src = imageurl;
+        a.appendChild(img);
+        
+        document.body.appendChild(a);
+        a.className = "a"
+        img.className = "img"
+      }
+
+    </script>
+
     <br>
     <p>
       to download go to 

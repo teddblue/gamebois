@@ -17,14 +17,7 @@
     <h2>Gameboy</h2>
 
     <br>
-    <p>games and player</p>
-    
-    <br>
-
-    <a href="freeplay.html?type=gb" target="_blank" rel="noopener noreferrer">
-         <img alt="GB" src="/gamebois/imageAssets/consoles/GB.png">
-    </a>
-
+    <!--
     <a href="player.html?game=tetris&type=gb">
          <img alt="GB-Tetris" src="/gamebois/imageAssets/gb/tetris.png">
     </a>
@@ -43,7 +36,35 @@
     <a href="player.html?game=pokemon-yellow&type=gb">
          <img alt="GB-Tetris" src="/gamebois/imageAssets/gb/pokemon-yellow.png">
     </a>
-    
+    -->
+
+    <script>
+      var gameslist = ["tetris", "metroid-ii-return-of-samus", "wario-land", 
+      "pokemon-red",  "pokemon-blue",  "pokemon-yellow", 
+      "super-mario-land", "super-mario-land-2", 
+      "donkey-kong", "donkey-kong-land", "donkey-kong-land-2", "donkey-kong-land-3", 
+      "kirbys-dream-land", "kirbys-dream-land-2"];
+      var console = "gbc";
+
+      //add image links to games
+      for (let i = 0; i < gameslist.length; i++) {
+        var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+
+        const a = document.createElement("a");
+        a.setAttribute("href", link);
+
+        const img = new Image();
+        img.src = imageurl;
+        a.appendChild(img);
+        
+        document.body.appendChild(a);
+        a.className = "a"
+        img.className = "img"
+      }
+
+    </script>
+
     <br>
     <p>
       to play more games go to 
