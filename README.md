@@ -2,7 +2,7 @@
 ![Site Logo](/imageAssets/gameboislogo512.gif)
 
 # updates:
--🎅CHRISTMAS🎅.\ 
+-🎅CHRISTMAS🎅\ 
 -gitlab alternate site.\
 -freeplay mode.
 
