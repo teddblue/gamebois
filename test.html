@@ -18,7 +18,8 @@
       var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"];
       var console = "gbc";
 
-      for (let i = 0; i <= gameslist.length; i++) {
+      //add image links to games
+      for (let i = 0; i < gameslist.length; i++) {
         var link = "player.html?game=" + gameslist[i] + "&type=" + console;
         var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
 
@@ -27,9 +28,20 @@
 
         const img = new Image();
         img.src = imageurl;
+        
         a.appendChild(img);
 
         document.body.appendChild(a);
+      }
+
+      //refresh css styling
+      let links = document.getElementsByTagName('link');
+      for (let i = 0; i < links.length; i++) {
+        if (links[i].getAttribute('rel') == 'stylesheet') {
+          let href = links[i].getAttribute('href').split('?')[0];
+          let newHref = href + '?version=' + new Date().getMilliseconds();         
+          links[i].setAttribute('href', newHref);
+        }
       }
     </script>
   </body>
