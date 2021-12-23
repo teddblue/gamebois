@@ -39,6 +39,8 @@ img {
     width: 256px;
     height: auto;
     image-rendering: pixelated;
+    display: inline-block;
+    margin: 10px;
 }
 
 .container {
