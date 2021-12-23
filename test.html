@@ -14,13 +14,16 @@
     </h1>
 
     <br>
-    <h2>Gameboy</h2>
+    <script>
+      var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"]
+      var console = "gbc"
 
-    <br>
-    <p>games and player</p>
-    
-    <br>
-    <script src ="listgame.js"></script>
+      for (let i = 0; i <= gameslist.length; i++) {
+        var link = "player.html?game=" + gameslist[i] + "&type=" + console
+        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png"
 
-    <script src="/gamebois/favicon.js"></script>
+        const a = document.createElement("a");
+        a.setAttribute("href", link)
+      }
+    </script>
   </body>
