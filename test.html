@@ -24,7 +24,12 @@
 
         const a = document.createElement("a");
         a.setAttribute("href", link);
-        a.innerHTML = gameslist[i];
+
+        const img = new Image();
+        img.src = imageurl;
+        a.appendChild(img);
+
+        document.body.appendChild(a);
       }
     </script>
   </body>
