@@ -20,6 +20,8 @@
     <p>please note: nintendo ds games take longer to load that other games and run slightly slower than they should.</p>
     
     <br>
+
+    <!--
     <a href="player.html?game=mario-kart-ds&type=nds">
       <img alt="NDS-Mario Kart DS" src="/gamebois/imageAssets/nds/mario-kart-ds.png">
     </a>
@@ -35,7 +37,30 @@
     <a href="player.html?game=super-mario-64-ds&type=nds">
       <img alt="NDS-Super Mario 64 DS" src="/gamebois/imageAssets/nds/super-mario-64-ds.png">
     </a>
-    
+  -->
+  <script>
+    var gameslist = ["mario-kart-ds", "super-mario-64-ds", "new-super-mario-bros", "nintendogs-best-friends"];
+    var console = "nds";
+
+    //add image links to games
+    for (let i = 0; i < gameslist.length; i++) {
+      var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+      var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+
+      const a = document.createElement("a");
+      a.setAttribute("href", link);
+
+      const img = new Image();
+      img.src = imageurl;
+      a.appendChild(img);
+      
+      document.body.appendChild(a);
+      a.className = "a"
+      img.className = "img"
+    }
+
+  </script>
+
     <br>
     <p>
       to download go to 
