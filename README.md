@@ -1,9 +1,12 @@
 # gamebois
 ![Site Logo](/imageAssets/gameboislogo512.gif)
 
+#🎅CHRISTMAS🎅
+
 # updates:
+-way more gb and gba games.\
 -gitlab alternate site.\
--freeplay mode.
+-freeplay mode.\
 
 # upcoming updates:
 -increasing libraries for GB, GBC, and GBA.\
