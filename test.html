@@ -15,15 +15,16 @@
 
     <br>
     <script>
-      var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"]
-      var console = "gbc"
+      var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"];
+      var console = "gbc";
 
       for (let i = 0; i <= gameslist.length; i++) {
-        var link = "player.html?game=" + gameslist[i] + "&type=" + console
-        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png"
+        var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
 
         const a = document.createElement("a");
-        a.setAttribute("href", link)
+        a.setAttribute("href", link);
+        a.innerHTML = gameslist[i];
       }
     </script>
   </body>
