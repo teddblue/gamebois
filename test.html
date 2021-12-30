@@ -13,9 +13,21 @@
       <a href="/gamebois/index.html">gamebois</a>
     </h1>
 
+    <div id="games">
+
+    </div>
+
     <br>
     <script>
-      const type = new URLSearchParams(window.location.search).get('type')
+      const div = document.getElementById("games");
+
+      const urlParams = new URLSearchParams(window.location.search);
+      var type
+      if(urlParams.has("type")){
+        type = new URLSearchParams(window.location.search).get('type');
+      }else{
+        type = false;
+      }
 
       //lists of games by console
       const gb = ["tetris", "metroid-ii-return-of-samus", "wario-land", "pokemon-red", "pokemon-blue", "pokemon-yellow", "super-mario-land", "super-mario-land-2", "donkey-kong", "donkey-kong-land", "donkey-kong-land-2", "donkey-kong-land-3", "kirbys-dream-land", "kirbys-dream-land-2"];
@@ -28,22 +40,44 @@
         gameslist = gb
       }else if(type == "gbc"){
 
+<<<<<<< Updated upstream
       }
       
       for (let i = 0; i < gameslist.length; i++) {
         var link = "player.html?game=" + gameslist[i] + "&type=" + console;
         var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+=======
+      function listGames(){
+        div.innerHTML = "";
+        for (let i = 0; i < gameslist.length; i++) {
+          var console
+          if(type){
+            console = type
+          }else if(gb.includes(gameslist[i])){
+            console = "gb";
+          }else if(gba.includes(gameslist[i])){
+            console = "gbc";
+          }else if(gbc.includes(gameslist[i])){
+            console = "gba";
+          }else if(nds.includes(gameslist[i])){
+            console = "nds";
+          }
+          
+          var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+          var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+>>>>>>> Stashed changes
 
-        const a = document.createElement("a");
-        a.setAttribute("href", link);
+          const a = document.createElement("a");
+          a.setAttribute("href", link);
 
-        const img = new Image();
-        img.src = imageurl;
-        a.appendChild(img);
-        
-        document.body.appendChild(a);
-        a.className = "a"
-        img.className = "img"
+          const img = new Image();
+          img.src = imageurl;
+          a.appendChild(img);
+          
+          div.appendChild(a);
+          a.className = "a"
+          img.className = "img"
+        }
       }
     </script>
   </body>
