@@ -39,6 +39,14 @@
       if(type == "gb"){
         gameslist = gb;
       }else if(type == "gbc"){
+        gameslist = gbc;
+      }else if(type == "gba"){
+        gameslist = gba;
+      }else if(type == "nds"){
+        gameslist = nds;
+      }else{
+        gameslist = [...gb, ...gbc, ...gba, ...nds];
+      }
 
       function listGames(){
         div.innerHTML = "";
