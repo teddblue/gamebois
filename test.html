@@ -13,7 +13,6 @@
       <a href="/gamebois/index.html">gamebois</a>
     </h1>
 
-    <input id = "search" type="text">
     <div id="games">
 
     </div>
@@ -70,6 +69,7 @@
 
           const a = document.createElement("a");
           a.setAttribute("href", link);
+          a.setAttribute("id", gameslist[i])
 
           const img = new Image();
           img.src = imageurl;
