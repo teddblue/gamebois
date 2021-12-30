@@ -40,13 +40,6 @@
         gameslist = gb
       }else if(type == "gbc"){
 
-<<<<<<< Updated upstream
-      }
-      
-      for (let i = 0; i < gameslist.length; i++) {
-        var link = "player.html?game=" + gameslist[i] + "&type=" + console;
-        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
-=======
       function listGames(){
         div.innerHTML = "";
         for (let i = 0; i < gameslist.length; i++) {
@@ -65,7 +58,6 @@
           
           var link = "player.html?game=" + gameslist[i] + "&type=" + console;
           var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
->>>>>>> Stashed changes
 
           const a = document.createElement("a");
           a.setAttribute("href", link);
