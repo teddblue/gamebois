@@ -42,16 +42,16 @@
           console = type
         }else if(gb.includes(gameslist[i])){
           console = "gb";
-        }else if(type == "gbc"){
+        }else if(gba.includes(gameslist[i])){
           console = "gbc";
-        }else if(type == "gba"){
+        }else if(gbc.includes(gameslist[i])){
           console = "gba";
-        }else if(type == "nds"){
+        }else if(nds.includes(gameslist[i])){
           console = "nds";
         }
         
-        var link = "player.html?game=" + gameslist[i] + "&type=" + type;
-        var imageurl = "/gamebois/imageAssets/" + type + "/" + gameslist[i] + ".png";
+        var link = "player.html?game=" + gameslist[i] + "&type=" + console;
+        var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
 
         const a = document.createElement("a");
         a.setAttribute("href", link);
