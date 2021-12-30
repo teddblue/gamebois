@@ -15,10 +15,21 @@
 
     <br>
     <script>
-      var gameslist = ["links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"];
-      var console = "gbc";
+      const type = new URLSearchParams(window.location.search).get('type')
 
-      //add image links to games
+      //lists of games by console
+      const gb = ["tetris", "metroid-ii-return-of-samus", "wario-land", "pokemon-red", "pokemon-blue", "pokemon-yellow", "super-mario-land", "super-mario-land-2", "donkey-kong", "donkey-kong-land", "donkey-kong-land-2", "donkey-kong-land-3", "kirbys-dream-land", "kirbys-dream-land-2"];
+      const gbc = ["oracle-of-ages", "oracle-of-seasons", "wario-land-2", "wario-land-3", "links-awakening-dx", "pokemon-crystal", "pokemon-gold", "pokemon-silver", "super-mario-bros-delux"];
+      const gba = ["the-minish-cap", "friends-of-mineral-town", "mario-cart-super-circuit", "mario-and-luigi-superstar-saga", "pokemon-ruby", "pokemon-sapphire", "pokemon-emerald", "pokemon-fire-red", "pokemon-leaf-green", "metroid-fusion", "metroid-zero-mission", "super-mario-bros-2", "super-mario-bros-3", "super-mario-world", "yoshis-island"];
+      const nds = ["mario-kart-ds", "super-mario-64-ds", "new-super-mario-bros", "nintendogs-best-friends"];
+
+      var gameslist
+      if(type == "gb"){
+        gameslist = gb
+      }else if(type == "gbc"){
+
+      }
+      
       for (let i = 0; i < gameslist.length; i++) {
         var link = "player.html?game=" + gameslist[i] + "&type=" + console;
         var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
@@ -34,6 +45,5 @@
         a.className = "a"
         img.className = "img"
       }
-
     </script>
   </body>
