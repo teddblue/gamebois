@@ -55,6 +55,24 @@ img {
   vertical-align: middle;
 }
 
+.thumbnail {
+    width: 256px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.thumbnail:hover {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid var(--color4);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
 .button {
     background-color: var(--color4); /* Green */
     border-radius: 8px;
