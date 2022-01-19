@@ -43,6 +43,11 @@ img {
     margin: 10px;
 }
 
+.player {
+    background-color: var(--color4);
+    color: var(--color2);
+}
+
 .container {
   margin: 1rem;
   padding: 2rem 2rem;
@@ -50,7 +55,7 @@ img {
 }
 .game {
   display: inline-block;
-  border: 1px solid var(--color4);
+  background-color: var(--color4);
   padding: 1rem 1rem;
   vertical-align: middle;
 }
