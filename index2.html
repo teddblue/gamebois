@@ -71,9 +71,11 @@
     <script>
         function listTitles(type){
             var menu = document.getElementById(type)
-            json = ""
+            json = null
             fetch("./content.json")
-                .then(json = content.json)
+                .then(response => {
+                    json = response.json;
+                })
             var gamelist = json[type]
 
             for (let i = 0; i < gameslist.length; i++) {
