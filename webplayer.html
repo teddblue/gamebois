@@ -26,10 +26,9 @@
 
                 var link = "/webplayer.html?type=scratch&game=" + gamename
                 const a = document.createElement("a");
-                a.setAttribute("href", link);
-
                 const text = "If this isn't loading use this link";
-                a.innerHTML = "<a href='" + link + "'>click here if game doesnt work</a>";
+                a.innerHTML = "click here if game doesnt work";
+                a.href = link
                 document.body.appendChild(a);
                 a.className = "a"
 			}
@@ -50,7 +49,8 @@
                 a.setAttribute("href", link);
 
                 const text = "If this isn't loading use this link";
-                a.innerHTML = "<a href='" + link + "'>click here for better performance (may be blocked)</a>";
+                a.innerHTML = ">click here for better performance (may be blocked)";
+                a.href = link
                 document.body.appendChild(a);
                 a.className = "a"
 			}
