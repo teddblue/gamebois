@@ -24,7 +24,10 @@
                 game.setAttribute("allowfullscreen", "true")
                 document.body.appendChild(game)
 
-                var link = "/webplayer.html?type=scratch&game=" + gamename
+                br = document.createElement("br")
+                document.body.appendChild(br)
+
+                var link = "/gamebois/webplayer.html?type=scratch&game=" + gamename
                 const a = document.createElement("a");
                 const text = "If this isn't loading use this link";
                 a.innerHTML = "click here if game doesnt work";
@@ -44,10 +47,12 @@
                 game.setAttribute("allowfullscreen", "true")
                 document.body.appendChild(game)
 
-                var link = "/webplayer.html?type=turbo&game=" + gamename
+                br = document.createElement("br")
+                document.body.appendChild(br)
+
+                var link = "gamebois/webplayer.html?type=turbo&game=" + gamename
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
-
                 const text = "If this isn't loading use this link";
                 a.innerHTML = ">click here for better performance (may be blocked)";
                 a.href = link

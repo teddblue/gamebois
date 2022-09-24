@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gamebois</title>
+        <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body class = "player">
+        <div class="container" class="player" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;">
+            <div class="game" id="game"></div>
+            <p>remember to download saves!</p>
+        </div>
+        
+        <script type="text/javascript">
+            emujstypes = ["nds", "gb", "gbc", "gba"]
+
+            if (emujstypes.includes(type)){
+                var directory = "games/";
+                const gamename = new URLSearchParams(window.location.search).get('game')
+                const type = new URLSearchParams(window.location.search).get('type')
+                const zippedGames = ["nds", "gb", "gbc", "gba"]
+                //style="margin:auto; width:640px; height:480px; max-width:100%"
+
+                var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
+
+                EJS_startOnLoaded = true;
+                EJS_color = '#88c070'
+                EJS_player = '#game';
+                EJS_biosUrl = '';
+                EJS_gameUrl = game; // Url to Game rom
+                EJS_core = type;
+                EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
+
+                player = document.createElement("script")
+                player.src = "data/loader.js"
+                document.body.appendChild(player)
+            } else {
+                if (type=="turbo") {
+                    var url = "https://turbowarp.org/" + gamename + "/embed"
+                    var game = document.createElement("iframe")
+                    game.setAttribute("src", url)
+                    game.setAttribute("width", "499")
+                    game.setAttribute("height", "416")
+                    game.setAttribute("allowtransparency", "true")
+                    game.setAttribute("frameborder", "0")
+                    game.setAttribute("scrolling", "no")
+                    game.setAttribute("allowfullscreen", "true")
+                    document.body.appendChild(game)
+
+                    br = document.createElement("br")
+                    document.body.appendChild(br)
+
+                    var link = "/gamebois/webplayer.html?type=scratch&game=" + gamename
+                    const a = document.createElement("a");
+                    const text = "If this isn't loading use this link";
+                    a.innerHTML = "click here if game doesnt work";
+                    a.href = link
+                    document.body.appendChild(a);
+                    a.className = "a"
+                }
+                if (type=="scratch") {
+                    var url = "https://scratch.mit.edu/projects/embed/" + gamename + "/?autostart=false"
+                    var game = document.createElement("iframe")
+                    game.setAttribute("src", url)
+                    game.setAttribute("width", "499")
+                    game.setAttribute("height", "416")
+                    game.setAttribute("allowtransparency", "true")
+                    game.setAttribute("frameborder", "0")
+                    game.setAttribute("scrolling", "no")
+                    game.setAttribute("allowfullscreen", "true")
+                    document.body.appendChild(game)
+
+                    br = document.createElement("br")
+                    document.body.appendChild(br)
+
+                    var link = "gamebois/webplayer.html?type=turbo&game=" + gamename
+                    const a = document.createElement("a");
+                    a.setAttribute("href", link);
+                    const text = "If this isn't loading use this link";
+                    a.innerHTML = ">click here for better performance (may be blocked)";
+                    a.href = link
+                    document.body.appendChild(a);
+                    a.className = "a"
+                }
+            }
+        </script>
+        <script src="data/loader.js"></script>
+
+    </body>
+</html>

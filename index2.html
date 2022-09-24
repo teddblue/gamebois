@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamebois</title>
+    <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <img alt="logo" src="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <h1>gamebois</h1>
+    <a href='https://dissertation-writingservice.com/'>Diss.Writing Service</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=059503053915b89110998e9e7a858732111e5040'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/884234/t/6"></script>
+    
+    <p>
+        4/5/22: updates to emulatorjs
+    </p>
+    <br>
+    
+    <p>
+          <a href="https://sites.google.com/view/game-bois/home">[old site]</a>
+          <a href="info.html">[gamebois info]</a>
+          <a href="freeplay.html">[upload game]</a>
+    </p>
+    <br>
+    <!-- Tab links -->
+    <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'GB')" id="defaultOpen">GB</button>
+    <button class="tablinks" onclick="openTab(event, 'GBC')">GBC</button>
+    <button class="tablinks" onclick="openTab(event, 'GBA')">GBA</button>
+    </div>
+  
+    <!-- Tab content -->
+    <div id="GB" class="tabcontent">
+        <h3>GB</h3>
+        <p>GB games go here</p>
+    </div>
+    
+    <div id="GBC" class="tabcontent">
+        <h3>GBC</h3>
+        <p>GBC games go here</p>
+    </div>
+    
+    <div id="GBA" class="tabcontent">
+        <h3>GBA</h3>
+        <p>GBA games go here</p>
+    </div>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        function openTab(evt, TabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+    <script src="content.json" id="content"></script>
+    <script>
+        function listTitles(type){
+            var menu = document.getElementById(type)
+            json = ""
+            fetch("./content.json")
+                .then(json = content.json)
+            var gamelist = json[type]
+
+            for (let i = 0; i < gameslist.length; i++) {
+                var link = "player.html?game=" + gameslist[i] + "&type=" + type;
+                var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
+                const a = document.createElement("a");
+                a.setAttribute("href", link);
+                const img = new Image();
+                img.src = imageurl;
+                a.appendChild(img);
+                menu.appendChild(a);
+                a.className = "a"
+                img.className = "img"
+            }
+        }
+
+        listTitles("GB")
+    </script>
+    <br>
+    <script src="/gamebois/favicon.js"></script>
+</body>
+</html>
