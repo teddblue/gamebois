@@ -11,7 +11,8 @@
 		<script type="text/javascript">
 			const gamename = new URLSearchParams(window.location.search).get('game')
             const type = new URLSearchParams(window.location.search).get('type')
-			if (type=="sb3") {
+			//test: webplayer.html?type=sb3&game=714580258
+            if (type=="turbo") {
                 var url = "https://turbowarp.org/" + gamename + "/embed"
 				var game = document.createElement("iframe")
                 game.setAttribute("src", url)
@@ -22,6 +23,36 @@
                 game.setAttribute("scrolling", "no")
                 game.setAttribute("allowfullscreen", "true")
                 document.body.appendChild(game)
+
+                var link = "/webplayer.html?type=scratch&game=" + gamename
+                const a = document.createElement("a");
+                a.setAttribute("href", link);
+
+                const text = "If this isn't loading use this link";
+                a.innerHTML = "<a href='" + link + ">click here if game doesn't work</a>";
+                document.body.appendChild(a);
+                a.className = "a"
+			}
+            if (type=="scratch") {
+                var url = "https://scratch.mit.edu/projects/embed/" + gamename + "/?autostart=false"
+				var game = document.createElement("iframe")
+                game.setAttribute("src", url)
+                game.setAttribute("width", "499")
+                game.setAttribute("height", "416")
+                game.setAttribute("allowtransparency", "true")
+                game.setAttribute("frameborder", "0")
+                game.setAttribute("scrolling", "no")
+                game.setAttribute("allowfullscreen", "true")
+                document.body.appendChild(game)
+
+                var link = "/webplayer.html?type=scratch&game=" + gamename
+                const a = document.createElement("a");
+                a.setAttribute("href", link);
+
+                const text = "If this isn't loading use this link";
+                a.innerHTML = "<a href='" + link + ">click here if game doesn't work</a>";
+                document.body.appendChild(a);
+                a.className = "a"
 			}
         </script>
 	</body>
