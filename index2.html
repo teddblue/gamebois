@@ -76,6 +76,7 @@
                 .then(response => {
                     json = response.json;
                 })
+            console.log(json)
             var gamelist = json[type]
 
             for (let i = 0; i < gameslist.length; i++) {

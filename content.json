@@ -1,4 +1,4 @@
-[{
+{
     "GB" : [
         "tetris", 
         "metroid-ii-return-of-samus", 
@@ -14,5 +14,50 @@
         "donkey-kong-land-3", 
         "kirbys-dream-land", 
         "kirbys-dream-land-2"
+    ],
+    "GBC" : [
+        "metal-gear-solid", 
+        "donkey-kong-country", 
+        "dragon-warrior-1-and-2", 
+        "dragon-warrior-3", 
+        "pokemon-pinball", 
+        "pokemon-trading-card-game",
+        "mega-man-xtreme", 
+        "mega-man-xtreme-2", 
+        "oracle-of-ages", 
+        "oracle-of-seasons", 
+        "wario-land-2", 
+        "wario-land-3", 
+        "links-awakening-dx", 
+        "pokemon-crystal", 
+        "pokemon-gold", 
+        "pokemon-silver", 
+        "super-mario-bros-delux"
+    ],
+    "GBA" : [
+        "the-minish-cap", 
+        "friends-of-mineral-town", 
+        "mario-cart-super-circuit", 
+        "mario-and-luigi-superstar-saga", 
+        "pokemon-ruby", 
+        "pokemon-sapphire", 
+        "pokemon-emerald", 
+        "pokemon-fire-red", 
+        "pokemon-leaf-green", 
+        "metroid-fusion", 
+        "metroid-zero-mission", 
+        "super-mario-bros-2", 
+        "super-mario-bros-3", 
+        "super-mario-world", 
+        "yoshis-island"
+    ],
+    "NDS" : [
+        "pokemon-diamond", 
+        "pokemon-pearl", 
+        "pokemon-platinum", 
+        "mario-kart-ds", 
+        "super-mario-64-ds", 
+        "new-super-mario-bros", 
+        "nintendogs-best-friends"
     ]
-}]
+}
