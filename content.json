@@ -1,5 +1,5 @@
 {
-    "GB" : [
+    "gb" : [
         "tetris", 
         "metroid-ii-return-of-samus", 
         "wario-land", 
@@ -15,7 +15,7 @@
         "kirbys-dream-land", 
         "kirbys-dream-land-2"
     ],
-    "GBC" : [
+    "gbc" : [
         "metal-gear-solid", 
         "donkey-kong-country", 
         "dragon-warrior-1-and-2", 
@@ -34,7 +34,7 @@
         "pokemon-silver", 
         "super-mario-bros-delux"
     ],
-    "GBA" : [
+    "gba" : [
         "the-minish-cap", 
         "friends-of-mineral-town", 
         "mario-cart-super-circuit", 
@@ -51,7 +51,7 @@
         "super-mario-world", 
         "yoshis-island"
     ],
-    "NDS" : [
+    "nds" : [
         "pokemon-diamond", 
         "pokemon-pearl", 
         "pokemon-platinum", 

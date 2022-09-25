@@ -26,21 +26,21 @@
     <br>
     <!-- Tab links -->
     <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'GB')" id="defaultOpen"><img src="/gamebois/imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
-    <button class="tablinks" onclick="openTab(event, 'GBC')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
-    <button class="tablinks" onclick="openTab(event, 'GBA')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
+    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="/gamebois/imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
+    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
+    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
     </div>
   
     <!-- Tab content -->
-    <div id="GB" class="tabcontent">
+    <div id="gb" class="tabcontent">
         <h3>GB</h3>
         <p>GB games go here</p>
     </div>
-    <div id="GBC" class="tabcontent">
+    <div id="gbc" class="tabcontent">
         <h3>GBC</h3>
         <p>GBC games go here</p>
     </div>
-    <div id="GBA" class="tabcontent">
+    <div id="gba" class="tabcontent">
         <h3>GBA</h3>
         <p>GBA games go here</p>
     </div>
@@ -67,13 +67,13 @@
     </script>
 
     <script>
-        var content = {GB:["tetris","pokemon-blue"]}
+        var content = {gb:["tetris","pokemon-blue"]}
         function listTitles(type){
             var menu = document.getElementById(type)
             var gameslist = content[type]
             for (let i = 0; i < gameslist.length; i++) {
                 var link = "player.html?game=" + gameslist[i] + "&type=" + type;
-                var imageurl = "/gamebois/imageAssets/" + type.toLowerCase() + "/" + gameslist[i] + ".png";
+                var imageurl = "/gamebois/imageAssets/" + type + "/" + gameslist[i] + ".png";
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
                 const img = new Image();
@@ -90,9 +90,9 @@
             const response = await fetch(request);
             content = await response.json();
             console.log(JSON.stringify(content))
-            listTitles("GB")
-            listTitles("GBC")
-            listTitles("GBA")
+            listTitles("gb")
+            listTitles("gbc")
+            listTitles("gba")
         }
         getContent()
     </script>
