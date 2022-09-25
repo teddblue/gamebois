@@ -67,13 +67,7 @@
     </script>
 
     <script>
-        var content = null
-        async function getContent(){
-            const requestURL = './content.json';
-            const request = new Request(requestURL);
-            const response = await fetch(request);
-            content = await response.json();
-        }
+        var content = {GB:["tetris"]}
         function listTitles(type){
             var menu = document.getElementById(type)
             var gamelist = content[type]
@@ -89,6 +83,12 @@
                 a.className = "a"
                 img.className = "img"
             }
+        }
+        async function getContent(){
+            const requestURL = './content.json';
+            const request = new Request(requestURL);
+            const response = await fetch(request);
+            content = await response.json();
         }
         getContent()
         listTitles("GB")
