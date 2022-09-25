@@ -68,18 +68,12 @@
 
     <script>
         var content = {GB:["tetris","pokemon-blue"]}
-        async function getContent(){
-            const requestURL = './content.json';
-            const request = new Request(requestURL);
-            const response = await fetch(request);
-            content = await response.json();
-        }
         function listTitles(type){
             var menu = document.getElementById(type)
             var gameslist = content[type]
             for (let i = 0; i < gameslist.length; i++) {
                 var link = "player.html?game=" + gameslist[i] + "&type=" + type;
-                var imageurl = "/gamebois/imageAssets/" + type + "/" + gameslist[i] + ".png";
+                var imageurl = "/gamebois/imageAssets/" + type.toLowerCase() + "/" + gameslist[i] + ".png";
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
                 const img = new Image();
@@ -90,8 +84,17 @@
                 img.className = "img"
             }
         }
+        async function getContent(){
+            const requestURL = './content.json';
+            const request = new Request(requestURL);
+            const response = await fetch(request);
+            content = await response.json();
+            console.log(JSON.stringify(content))
+            listTitles("GB")
+            listTitles("GBC")
+            listTitles("GBA")
+        }
         getContent()
-        listTitles("GB")
     </script>
     <br>
     <script src="/gamebois/favicon.js"></script>
