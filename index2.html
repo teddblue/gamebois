@@ -36,12 +36,10 @@
         <h3>GB</h3>
         <p>GB games go here</p>
     </div>
-    
     <div id="GBC" class="tabcontent">
         <h3>GBC</h3>
         <p>GBC games go here</p>
     </div>
-    
     <div id="GBA" class="tabcontent">
         <h3>GBA</h3>
         <p>GBA games go here</p>
@@ -67,18 +65,18 @@
         evt.currentTarget.className += " active";
         }
     </script>
-    <script src="content.json" id="content"></script>
+
     <script>
+        var content = null
+        async function getContent(){
+            const requestURL = './content.json';
+            const request = new Request(requestURL);
+            const response = await fetch(request);
+            content = await response.json();
+        }
         function listTitles(type){
             var menu = document.getElementById(type)
-            json = null
-            fetch("./content.json")
-                .then(response => {
-                    json = response.json;
-                })
-            console.log(json)
-            var gamelist = json[type]
-
+            var gamelist = content[type]
             for (let i = 0; i < gameslist.length; i++) {
                 var link = "player.html?game=" + gameslist[i] + "&type=" + type;
                 var imageurl = "/gamebois/imageAssets/" + console + "/" + gameslist[i] + ".png";
@@ -92,7 +90,7 @@
                 img.className = "img"
             }
         }
-
+        getContent()
         listTitles("GB")
     </script>
     <br>
