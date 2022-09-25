@@ -67,7 +67,7 @@
     </script>
 
     <script>
-        var content = {GB:["tetris"]}
+        var content = {GB:["tetris","pokemon-blue"]}
         function listTitles(type){
             var menu = document.getElementById(type)
             var gamelist = content[type]
@@ -90,7 +90,7 @@
             const response = await fetch(request);
             content = await response.json();
         }
-        getContent()
+        //getContent()
         listTitles("GB")
     </script>
     <br>
