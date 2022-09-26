@@ -1,20 +1,20 @@
 # gamebois
 ![Site Logo](/imageAssets/gameboislogo512.gif)
 
-# updates:
--way more gb and gba games.\
--gitlab alternate site.\
--freeplay mode.\
+# updates: as of 9/25/22
+-all games accessible from home menu
+-console specific pages gone
 
 # upcoming updates:
--increasing libraries for GB, GBC, and GBA.\
--webapp mode, to ensure 'unblockedness'.
+-scratch games!
+-increasing libraries for GB, GBC, and GBA
 
 # ideas:
+-flash games???
 -set up a system for user to get any game off of vimm's lair (if its unblocked for them).
 
 # story:
-once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit.
+once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit. Now cool math is blocked again.
 
 # here are the links:
 github version (current version): https://teddblue.github.io/gamebois/ \
