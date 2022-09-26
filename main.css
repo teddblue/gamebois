@@ -99,6 +99,9 @@ img {
   
 /* Style the buttons that are used to open the tab content */
 .tab button {
+    width: 256px;
+    max-width: 20%;
+    height: auto;
     background-color: inherit;
     float: center;
     border: none;
