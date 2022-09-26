@@ -2,15 +2,15 @@
 ![Site Logo](/imageAssets/gameboislogo512.gif)
 
 # updates: as of 9/25/22
--all games accessible from home menu
+-all games accessible from home menu\
 -console specific pages gone
 
 # upcoming updates:
--scratch games!
+-scratch games!\
 -increasing libraries for GB, GBC, and GBA
 
 # ideas:
--flash games???
+-flash games???\
 -set up a system for user to get any game off of vimm's lair (if its unblocked for them).
 
 # story:
