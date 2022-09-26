@@ -1,8 +1,6 @@
 # gamebois
 ![Site Logo](/imageAssets/gameboislogo512.gif)
 
-#🎅CHRISTMAS🎅
-
 # updates:
 -way more gb and gba games.\
 -gitlab alternate site.\
