@@ -15,13 +15,18 @@
     
     <p>
         9/25/22: new homepage! old game selection pages won't work
+        10/1/22: cool new stuff!
+        -quick link to last played game
+        -shante for GBC 
+        -9 GBA games! including: sonic, wario, kirby, fire emblem, and advance wars
     </p>
     <br>
     
-    <p>
+    <p id = "quicklinks">
           <a href="https://sites.google.com/view/game-bois/home">[old site]</a>
           <a href="info.html">[gamebois info]</a>
           <a href="freeplay.html">[upload game]</a>
+          <br>
     </p>
     <br>
     <!-- Tab links -->
@@ -70,6 +75,23 @@
 
     <!-- display games-->
     <script>
+        //localStorage.removeItem("previous")
+        if (localStorage.getItem("previous") != null){
+            data = JSON.parse(localStorage.getItem("previous"))
+
+            var a = document.createElement("a")
+            a.href = "player2.html?type=" + data.type + "&game=" + data.game
+            var img = document.createElement("img")
+            img.src = "/gamebois/imageAssets/" + data.type + "/" + data.game + ".png"
+            a.appendChild(img)
+            var text = document.createElement("p")
+            text.innerHTML = "Continue Playing:"
+
+            quicklinks = document.getElementById("quicklinks")
+            quicklinks.appendChild(text)
+            quicklinks.appendChild(a)
+        }
+
         var content = {gb:["tetris","pokemon-blue"]}
         function listTitles(type){
             var menu = document.getElementById(type)

@@ -79,16 +79,20 @@ img {
     vertical-align: middle;
 }
 
-.button {
-    background-color: var(--color4); /* Green */
+button {
+    background-color: var(--color3); /* Green */
     border-radius: 8px;
     border: none;
     color: var(--color1);
-    padding: 15px 32px;
+    padding: 16px 16px;
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+button:hover {
+    background-color: var(--color2);
 }
 
 /* Style the tab */
@@ -111,19 +115,19 @@ img {
   
   /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: var(--color3);
 }
   
   /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: var(--color4);
 }
   
   /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color1);
     border-top: none;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }

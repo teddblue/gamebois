@@ -8,23 +8,26 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body class = "player">
-        <div class="container" class="player" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;">
+        <div class="container" id="player" style="margin:auto; width:100%; height:100%; max-width:100%; max-height:90%;">
+            <a href="index.html">[home] </a>
+            <br>
             <div class="game" id="game"></div>
-            <p>remember to download saves!</p>
         </div>
         
         <!--This is a new loading system that will allow html and other game types to play as well-->
         <script type="text/javascript">
             emujstypes = ["nds", "gb", "gbc", "gba"]
+            const gamename = new URLSearchParams(window.location.search).get('game')
+            const type = new URLSearchParams(window.location.search).get('type')
+            const zippedGames = ["nds", "gb", "gbc", "gba"]
+
+            var previous = {game:gamename, type:type}
+            localStorage.setItem('previous', JSON.stringify(previous))
 
             if (emujstypes.includes(type)){
                 var directory = "games/";
-                const gamename = new URLSearchParams(window.location.search).get('game')
-                const type = new URLSearchParams(window.location.search).get('type')
-                const zippedGames = ["nds", "gb", "gbc", "gba"]
-                //style="margin:auto; width:640px; height:480px; max-width:100%"
-
                 var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
+                //style="margin:auto; width:auto; height:90%; max-width:100%"
 
                 EJS_startOnLoaded = true;
                 EJS_color = '#88c070'
@@ -41,40 +44,43 @@
                 if (type=="turbo") {
                     var url = "https://turbowarp.org/" + gamename + "/embed"
                     var game = document.createElement("iframe")
+                    var player = document.getElementById("player")
                     game.setAttribute("src", url)
-                    game.setAttribute("width", "499")
-                    game.setAttribute("height", "416")
+                    game.setAttribute("width", "auto")
+                    game.setAttribute("max-width", "100%")
+                    game.setAttribute("height", "90%")
                     game.setAttribute("allowtransparency", "true")
                     game.setAttribute("frameborder", "0")
                     game.setAttribute("scrolling", "no")
                     game.setAttribute("allowfullscreen", "true")
-                    document.body.appendChild(game)
+                    player.appendChild(game)
 
                     br = document.createElement("br")
-                    document.body.appendChild(br)
+                    player.appendChild(br)
 
                     var link = "/gamebois/webplayer.html?type=scratch&game=" + gamename
                     const a = document.createElement("a");
                     const text = "If this isn't loading use this link";
                     a.innerHTML = "click here if game doesnt work";
                     a.href = link
-                    document.body.appendChild(a);
+                    player.appendChild(a);
                     a.className = "a"
                 }
                 if (type=="scratch") {
                     var url = "https://scratch.mit.edu/projects/embed/" + gamename + "/?autostart=false"
                     var game = document.createElement("iframe")
                     game.setAttribute("src", url)
-                    game.setAttribute("width", "499")
-                    game.setAttribute("height", "416")
+                    game.setAttribute("width", "auto")
+                    game.setAttribute("max-width", "100%")
+                    game.setAttribute("height", "90%")
                     game.setAttribute("allowtransparency", "true")
                     game.setAttribute("frameborder", "0")
                     game.setAttribute("scrolling", "no")
                     game.setAttribute("allowfullscreen", "true")
-                    document.body.appendChild(game)
+                    player.appendChild(game)
 
                     br = document.createElement("br")
-                    document.body.appendChild(br)
+                    player.appendChild(br)
 
                     var link = "gamebois/webplayer.html?type=turbo&game=" + gamename
                     const a = document.createElement("a");
@@ -82,12 +88,11 @@
                     const text = "If this isn't loading use this link";
                     a.innerHTML = ">click here for better performance (may be blocked)";
                     a.href = link
-                    document.body.appendChild(a);
+                    player.appendChild(a);
                     a.className = "a"
                 }
             }
         </script>
         <script src="data/loader.js"></script>
-
     </body>
 </html>
