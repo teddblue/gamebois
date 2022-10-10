@@ -8,14 +8,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body class = "player">
-        <!--<div class="container" class="player" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;">
-            <a href="index.html">[home] </a>
-            <br id = "break">
-            <div class="game" id="game"></div>
-        </div>-->
-        <div class="game" id="game" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;"></div>
-        
-        <!--This is a new loading system that will allow html and other game types to play as well-->
+
         <script src="data/swf2js.js"></script>
         <script type="text/javascript">
             emujstypes = ["nds", "gb", "gbc", "gba"]
@@ -27,6 +20,12 @@
             localStorage.setItem('previous', JSON.stringify(previous))
 
             if (emujstypes.includes(type)){
+                var div = document.createElement("div")
+                div.className = "game"
+                div.id = "game"
+                div.style = "margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;"
+                document.body.appendChild(div)
+
                 var directory = "games/";
                 var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
                 //style="margin:auto; width:auto; height:90%; max-width:100%"
