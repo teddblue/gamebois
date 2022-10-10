@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body class = "player">
-        <div class="container" id="player" style="margin:auto; width:100%; height:100%; max-width:100%; max-height:90%;">
+        <div class="container" class="player" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;">
             <a href="index.html">[home] </a>
             <br>
             <div class="game" id="game"></div>
@@ -41,55 +41,11 @@
                 player.src = "data/loader.js"
                 document.body.appendChild(player)
             } else {
-                if (type=="turbo") {
-                    var url = "https://turbowarp.org/" + gamename + "/embed"
-                    var game = document.createElement("iframe")
-                    var player = document.getElementById("player")
-                    game.setAttribute("src", url)
-                    game.setAttribute("width", "auto")
-                    game.setAttribute("max-width", "100%")
-                    game.setAttribute("height", "90%")
-                    game.setAttribute("allowtransparency", "true")
-                    game.setAttribute("frameborder", "0")
-                    game.setAttribute("scrolling", "no")
-                    game.setAttribute("allowfullscreen", "true")
-                    player.appendChild(game)
-
-                    br = document.createElement("br")
-                    player.appendChild(br)
-
-                    var link = "/gamebois/webplayer.html?type=scratch&game=" + gamename
-                    const a = document.createElement("a");
-                    const text = "If this isn't loading use this link";
-                    a.innerHTML = "click here if game doesnt work";
-                    a.href = link
-                    player.appendChild(a);
-                    a.className = "a"
+                if (type == "web") {
+                    var iframe = 
                 }
-                if (type=="scratch") {
-                    var url = "https://scratch.mit.edu/projects/embed/" + gamename + "/?autostart=false"
-                    var game = document.createElement("iframe")
-                    game.setAttribute("src", url)
-                    game.setAttribute("width", "auto")
-                    game.setAttribute("max-width", "100%")
-                    game.setAttribute("height", "90%")
-                    game.setAttribute("allowtransparency", "true")
-                    game.setAttribute("frameborder", "0")
-                    game.setAttribute("scrolling", "no")
-                    game.setAttribute("allowfullscreen", "true")
-                    player.appendChild(game)
+                if (type == "swf") {
 
-                    br = document.createElement("br")
-                    player.appendChild(br)
-
-                    var link = "gamebois/webplayer.html?type=turbo&game=" + gamename
-                    const a = document.createElement("a");
-                    a.setAttribute("href", link);
-                    const text = "If this isn't loading use this link";
-                    a.innerHTML = ">click here for better performance (may be blocked)";
-                    a.href = link
-                    player.appendChild(a);
-                    a.className = "a"
                 }
             }
         </script>
