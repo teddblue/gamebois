@@ -10,11 +10,12 @@
     <body class = "player">
         <div class="container" class="player" style="margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;">
             <a href="index.html">[home] </a>
-            <br>
+            <br id = "break">
             <div class="game" id="game"></div>
         </div>
         
         <!--This is a new loading system that will allow html and other game types to play as well-->
+        <script src="data/swf2js.js"></script>
         <script type="text/javascript">
             emujstypes = ["nds", "gb", "gbc", "gba"]
             const gamename = new URLSearchParams(window.location.search).get('game')
@@ -42,10 +43,10 @@
                 document.body.appendChild(player)
             } else {
                 if (type == "web") {
-                    var iframe = 
+
                 }
                 if (type == "swf") {
-
+                    swf2js.load('games/swf/' + gamename + ".swf")
                 }
             }
         </script>
