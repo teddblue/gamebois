@@ -14,6 +14,9 @@
         </div>
         
         <script type="text/javascript">
+            var previous = {game:gamename, type:type}
+            localStorage.setItem('previous', JSON.stringify(previous))
+
             var directory = "games/";
             const gamename = new URLSearchParams(window.location.search).get('game')
             const type = new URLSearchParams(window.location.search).get('type')
