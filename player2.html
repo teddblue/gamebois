@@ -9,7 +9,6 @@
     </head>
     <body class = "player">
 
-        <script src="data/swf2js.js"></script>
         <script type="text/javascript">
             emujstypes = ["nds", "gb", "gbc", "gba"]
             const gamename = new URLSearchParams(window.location.search).get('game')
@@ -38,7 +37,7 @@
                 EJS_core = type;
                 EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
 
-                player = document.createElement("script")
+                var player = document.createElement("script")
                 player.src = "data/loader.js"
                 document.body.appendChild(player)
             } else {
@@ -46,10 +45,14 @@
 
                 }
                 if (type == "swf") {
-                    swf2js.load('games/swf/' + gamename + ".swf")
+                    var htmlstring = '<object data="games/swf/'+gamename+'.swf" type="application/x-shockwave-flash" width="100%" height="100%"><param name="movie" value="games/swf/'+gamename+'.swf"><param name="quality" value="high"></object>'
+                    document.body.innerHTML = htmlstring + document.body.innerHTML
+
+                    var player = document.createElement("script")
+                    player.src = "ruffle/ruffle.js"
+                    document.body.appendChild(player)
                 }
             }
-        </script>
-        <!--<script src="data/loader.js"></script>-->
+        </script>        
     </body>
 </html>
