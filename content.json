@@ -36,8 +36,6 @@
         "super-mario-bros-delux"
     ],
     "gba" : [
-        "mario-and-luigi-partners-in-time",
-        "mario-and-luigi-bowsers-inside-story",
         "wario-land-4",
         "kirby-nightmare-in-dream-land", 
         "fire-emblem", 
@@ -64,6 +62,8 @@
         "yoshis-island"
     ],
     "nds" : [
+        "mario-and-luigi-partners-in-time",
+        "mario-and-luigi-bowsers-inside-story",
         "pokemon-diamond", 
         "pokemon-pearl", 
         "pokemon-platinum", 
