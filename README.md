@@ -1,13 +1,13 @@
 # gamebois
-![Site Logo](/imageAssets/gameboislogo512.gif) \
-[main site, ](https://teddblue.github.io/gamebois/) \
-[gitlab mirror, ](https://teddblue.gitlab.io/gamebois/) \
+![Site Logo](/imageAssets/gameboislogo512.gif)
+[main site, ](https://teddblue.github.io/gamebois/)
+[gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
 
-# updates: as of 9/25/22
+# updates: as of 10/15/22
+-flash game support ready!\
 -all games accessible from home menu\
--console specific pages gone\
--beginning flash game implementation
+-console specific pages gone
 
 # upcoming updates:
 -flash games\
@@ -21,6 +21,6 @@ once apon a time, cool math games was blocked at my school. now im obviously a s
 [emulator js](https://github.com/EmulatorJS/EmulatorJS) \
 [vimm.net](https://vimm.net) \
 [libretro thumbnails](https://thumbnails.libretro.com/) \
-[swf2js](https://swf2js.com/en/index.html) \
+[ruffle](https://ruffle.rs/#) \
 [w3schools](https://www.w3schools.com/) \
 special thanks to all the people who made these games!
