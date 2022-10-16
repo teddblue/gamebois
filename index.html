@@ -50,6 +50,7 @@
     </div>
     <div id="nds" class="tabcontent">
         <h3>Nintendo DS Games</h3>
+        <p>these games are not garunteed to run smoothly</p>
     </div>
 
     <!-- Tab code (by W3Schools)-->
@@ -82,7 +83,7 @@
             data = JSON.parse(localStorage.getItem("previous"))
 
             var a = document.createElement("a")
-            a.href = "player2.html?type=" + data.type + "&game=" + data.game
+            a.href = "player.html?type=" + data.type + "&game=" + data.game
             var img = document.createElement("img")
             img.src = "/gamebois/imageAssets/" + data.type + "/" + data.game + ".png"
             a.appendChild(img)
