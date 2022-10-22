@@ -7,6 +7,16 @@
         <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDP66SX5Q6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDP66SX5Q6');
+    </script>
+
     <body class = "player">
 
         <script type="text/javascript">
@@ -53,6 +63,15 @@
                     document.body.appendChild(player)
                 }
             }
+
+            //custom favicon
+            var link = document.querySelector("link[rel~='icon']");
+            if (!link) {
+                link = document.createElement('link');
+                link.rel = 'icon';
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }
+            link.href = 'imageAssets/' + type + '/' + gamename + '.png';
         </script>        
     </body>
 </html>

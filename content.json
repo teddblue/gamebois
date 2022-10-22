@@ -1,5 +1,11 @@
 {
     "gb" : [
+        "kirbys-block-ball",
+        "kirbys-star-stacker", 
+        "kirbys-pinball-land",
+        "kirbys-dream-land", 
+        "kirbys-dream-land-2",
+
         "tetris", 
         "metroid-ii-return-of-samus", 
         "wario-land", 
@@ -11,9 +17,7 @@
         "donkey-kong", 
         "donkey-kong-land", 
         "donkey-kong-land-2", 
-        "donkey-kong-land-3", 
-        "kirbys-dream-land", 
-        "kirbys-dream-land-2"
+        "donkey-kong-land-3" 
     ],
     "gbc" : [
         "shante",
@@ -36,8 +40,9 @@
         "super-mario-bros-delux"
     ],
     "gba" : [
-        "wario-land-4",
+        "kirby-amazing-mirror",
         "kirby-nightmare-in-dream-land", 
+        "wario-land-4",
         "fire-emblem", 
         "fire-emblem-blinding-blade", 
         "advance-wars", 
@@ -62,6 +67,10 @@
         "yoshis-island"
     ],
     "nds" : [
+        "kirby-canvas-curse",
+        "kirby-squeak-squad",
+        "kirby-super-star-ultra",
+        "kirby-mass-attack",
         "mario-and-luigi-partners-in-time",
         "mario-and-luigi-bowsers-inside-story",
         "pokemon-diamond", 

@@ -7,6 +7,16 @@
     <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDP66SX5Q6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KDP66SX5Q6');
+</script>
+
 <body>
     <img alt="logo" src="/gamebois/imageAssets/gameboislogo512.gif"/>
     <h1>gamebois</h1>
@@ -14,15 +24,14 @@
     <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/884234/t/6"></script>
     
     <span style="white-space: pre-line">@Model.CommentText</span>
-    <pre>
-        Coming this Sunday: lots of games by popular demand!
-
-        10/16/22
-        -game player v2.0
-        -'continue playing' link will now work once you play a game
-        -flash game support is ready!
-        -mario & luigi bowsers inside story and partners in time
-    </pre>
+    <p>
+    updates as of 10/15/22: TMK update<br>
+    -tab icon will match the game you're playing<br>
+    -google analytics being added<br>
+    -flash game requests are officially open!<br>
+    -gamebois has a case of TMK: too much kirby! find new kirby games for GB, GBA, and NDS!
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/URMguBV_gw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
     
     <p id = "quicklinks">
@@ -39,6 +48,7 @@
     <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
     <button class="tablinks" onclick="openTab(event, 'gba')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
     <button class="tablinks" onclick="openTab(event, 'nds')"><img src="/gamebois/imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
+    <button class="tablinks" onclick="openTab(event, 'swf')"><img src="/gamebois/imageAssets/gameboislogo512.png" alt="Flash"></button>
 
     </div>
   
@@ -55,6 +65,14 @@
     <div id="nds" class="tabcontent">
         <h3>Nintendo DS Games</h3>
         <p>these games are not garunteed to run smoothly</p>
+    </div>
+    <div id="swf" class="tabcontent">
+        <h3>Flash Games</h3>
+        <p>
+            we are still working on this, sorry for any inconvenience!<br>
+            have a game to suggest? use our 'requests and help' form!<br>
+            (many games aren't compatible with the emulator and wont be added)
+        </p>
     </div>
 
     <!-- Tab code (by W3Schools)-->

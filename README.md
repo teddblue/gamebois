@@ -4,7 +4,12 @@
 [gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
 
-# updates: as of 10/15/22
+# updates as of 10/15/22: TMK update
+-tab icon will match the game you're playing\
+-google analytics being added\
+-flash game requests are officially open!\
+-gamebois has a case of TMK: too much kirby! find new kirby games for GB, GBA, and NDS!
+## 10/15/22
 -flash game support ready!\
 -all games accessible from home menu\
 -console specific pages gone
