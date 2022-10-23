@@ -1,6 +1,6 @@
 # gamebois
 ![Site Logo](/imageAssets/gameboislogo512.gif)
-gamebois GitHub has now been out for one year as of Oct 21st! Sadly I didn't find out until Oct 22, but we will have a belated celebration!\
+gamebois has now been out for one year! (Original August 25, current October 21) Sadly I didn't find out until Oct 22, but we will have a belated celebration!\
 [main site, ](https://teddblue.github.io/gamebois/)
 [gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
