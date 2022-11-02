@@ -5,7 +5,9 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 [gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
 
-# updates as of 10/15/22: TMK update
+# updates as of 11/02/22
+-flash games added without icons
+## 10/22/22: TMK update
 -tab icon will match the game you're playing\
 -google analytics being added\
 -flash game requests are officially open!\
@@ -16,9 +18,10 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 -console specific pages gone
 
 # upcoming updates:
--flash games\
 -favorites list\
--increasing libraries for GB, GBC, and GBA
+-fan games and homebrew\
+-sega game gear\
+-obscure games???
 
 # story:
 once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit. Now cool math is blocked again.

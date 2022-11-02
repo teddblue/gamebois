@@ -80,5 +80,16 @@
         "super-mario-64-ds", 
         "new-super-mario-bros", 
         "nintendogs-best-friends"
+    ],
+    "swf" : [
+        "super-smash-flash",
+        "run",
+        "bloons",
+        "bloons-td",
+        "bloons-td-2",
+        "line-rider",
+        "learn-to-fly",
+        "papas-pizzeria",
+        "ultimate-flash-sonic"
     ]
 }
