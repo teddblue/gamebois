@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gamebois</title>
+        <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDP66SX5Q6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDP66SX5Q6');
+    </script>
+
+    <body class = "player">
+
+        <script type="text/javascript">
+            emujstypes = ["nds", "gb", "gbc", "gba"]
+            const gamename = new URLSearchParams(window.location.search).get('game')
+            const zippedGames = ["nds", "gb", "gbc", "gba"]
+            var content = {}
+
+            async function getContent(){
+                const requestURL = './gameslist.json';
+                const request = new Request(requestURL);
+                const response = await fetch(request);
+                content = await response.json();
+                console.log(JSON.stringify(content))
+            }
+            function findType(name){
+                for(let i = 0; i < content.length; i++){
+                    if(content[i].name == name){
+                        return content[i].type
+                    }
+                }
+            }
+            getContent()
+            const type = findType(gamename)
+
+            var previous = {game:gamename, type:type}
+            localStorage.setItem('previous', JSON.stringify(previous))
+
+            if (emujstypes.includes(type)){
+                var div = document.createElement("div")
+                div.className = "game"
+                div.id = "game"
+                div.style = "margin:auto; width:1280px; height:960px; max-width:100%; max-height:90%;"
+                document.body.appendChild(div)
+
+                var directory = "games/";
+                var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
+                //style="margin:auto; width:auto; height:90%; max-width:100%"
+
+                EJS_startOnLoaded = true;
+                EJS_color = '#88c070'
+                EJS_player = '#game';
+                EJS_biosUrl = '';
+                EJS_gameUrl = game; // Url to Game rom
+                EJS_core = type;
+                EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
+
+                var player = document.createElement("script")
+                player.src = "data/loader.js"
+                document.body.appendChild(player)
+            } else {
+                if (type == "web") {
+
+                }
+                if (type == "swf") {
+                    var htmlstring = '<object data="games/swf/'+gamename+'.swf" type="application/x-shockwave-flash" width="100%" height="100%"><param name="movie" value="games/swf/'+gamename+'.swf"><param name="quality" value="high"></object>'
+                    document.body.innerHTML = htmlstring + document.body.innerHTML
+
+                    var player = document.createElement("script")
+                    player.src = "ruffle/ruffle.js"
+                    document.body.appendChild(player)
+                }
+            }
+
+            //custom favicon
+            var link = document.querySelector("link[rel~='icon']");
+            if (!link) {
+                link = document.createElement('link');
+                link.rel = 'icon';
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }
+            link.href = 'imageAssets/' + type + '/' + gamename + '.png';
+        </script>        
+    </body>
+</html>

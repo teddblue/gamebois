@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamebois</title>
+    <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- google ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1230923795351848"
+     crossorigin="anonymous"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDP66SX5Q6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KDP66SX5Q6');
+</script>
+
+<body>
+    <img alt="logo" src="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <h1>gamebois</h1>
+    <a href='https://dissertation-writingservice.com/'>Diss.Writing Service</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=059503053915b89110998e9e7a858732111e5040'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/884234/t/6"></script>
+    <p>
+    updates as of 11/02/22<br>
+    -flash games added without icons<br>
+    </p>
+    <br>
+    
+    <p id = "quicklinks">
+          <a href="https://sites.google.com/view/game-bois/home">[old site]</a>
+          <a href="README.md">[info]</a>
+          <a href="freeplay.html">[upload game]</a>
+          <a href="https://forms.gle/jCvUKEcrv7EVkRbU9">[requests and help]</a>
+          <br>
+    </p>
+    <br>
+    <!-- Tab links -->
+    <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="/gamebois/imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
+    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
+    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
+    <button class="tablinks" onclick="openTab(event, 'nds')"><img src="/gamebois/imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
+    <button class="tablinks" onclick="openTab(event, 'swf')"><p>Adobe Flash</p></button>
+
+    </div>
+  
+    <!-- Tab content -->
+    <div id="gb" class="tabcontent">
+        <h3>Gameboy Games</h3>
+    </div>
+    <div id="gbc" class="tabcontent">
+        <h3>Gameboy Color Games</h3>
+    </div>
+    <div id="gba" class="tabcontent">
+        <h3>Gameboy Advance Games</h3>
+    </div>
+    <div id="nds" class="tabcontent">
+        <h3>Nintendo DS Games</h3>
+        <p>these games are not garunteed to run smoothly</p>
+    </div>
+    <div id="swf" class="tabcontent">
+        <h3>Adobe Flash Games</h3>
+    </div>
+
+    <p>want a game or platform added? <a href="https://forms.gle/jCvUKEcrv7EVkRbU9">submit a request</a></p>
+    <!-- Tab code (by W3Schools)-->
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        function openTab(evt, TabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+    <!-- display games-->
+    <script>
+        if (localStorage.getItem("previous") != null){
+            data = JSON.parse(localStorage.getItem("previous"))
+
+            var a = document.createElement("a")
+            a.href = "player.html?type=" + data.type + "&game=" + data.game
+            var img = document.createElement("img")
+            img.src = "/gamebois/imageAssets/" + data.type + "/" + data.game + ".png"
+            a.appendChild(img)
+            var text = document.createElement("p")
+            text.innerHTML = "Continue Playing:"
+
+            quicklinks = document.getElementById("quicklinks")
+            quicklinks.appendChild(text)
+            quicklinks.appendChild(a)
+        }
+
+        var content = [{name:"tetris", type:"gb"}, {name:"pokemon-silver", type:"gbc"}]
+        function listTitles(type){
+            var menu = document.getElementById(type)
+            var gameslist = content
+            for (let i = 0; i < gameslist.length; i++) {
+                if (gameslist[i].type == type){
+                var link = "player.html?game=" + gameslist[i].name + "&type=" + type;
+                var imageurl = "/gamebois/imageAssets/" + type + "/" + gameslist[i].name + ".png";
+                const a = document.createElement("a");
+                a.setAttribute("href", link);
+                const img = new Image();
+                img.src = imageurl;
+                img.alt = gameslist[i].name
+                a.appendChild(img);
+                menu.appendChild(a);
+                a.className = "a"
+                img.className = "img"
+                }
+            }
+        }
+        async function getContent(){
+            const requestURL = './gameslist.json';
+            const request = new Request(requestURL);
+            const response = await fetch(request);
+            content = await response.json();
+            console.log(JSON.stringify(content))
+            listTitles("gb")
+            listTitles("gbc")
+            listTitles("gba")
+            listTitles("nds")
+            listTitles("swf")
+        }
+        getContent()
+    </script>
+    <br>
+</body>
+</html>
