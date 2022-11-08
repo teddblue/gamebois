@@ -92,6 +92,7 @@
     </script>
     <!-- display games-->
     <script>
+        var gameslist = []
         if (localStorage.getItem("previous") != null){
             data = JSON.parse(localStorage.getItem("previous"))
 
@@ -111,7 +112,6 @@
         var content = [{name:"tetris", type:"gb"}, {name:"pokemon-silver", type:"gbc"}]
         function listTitles(type){
             var menu = document.getElementById(type)
-            var gameslist = content
             for (let i = 0; i < gameslist.length; i++) {
                 if (gameslist[i].type == type){
                 var link = "player.html?game=" + gameslist[i].name + "&type=" + type;
@@ -132,7 +132,7 @@
             const requestURL = './gameslist.json';
             const request = new Request(requestURL);
             const response = await fetch(request);
-            content = await response.json();
+            gameslist = await response.json();
             console.log(JSON.stringify(content))
             listTitles("gb")
             listTitles("gbc")
