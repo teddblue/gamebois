@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gamebois</title>
-    <link rel="icon" type="image/gif" href="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <link rel="icon" type="image/gif" href="./imageAssets/gameboislogo512.gif"/>
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <!-- google ads -->
@@ -21,7 +21,7 @@
 </script>
 
 <body>
-    <img alt="logo" src="/gamebois/imageAssets/gameboislogo512.gif"/>
+    <img alt="logo" src="./imageAssets/gameboislogo512.gif"/>
     <h1>gamebois</h1>
     <a href='https://dissertation-writingservice.com/'>Diss.Writing Service</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=059503053915b89110998e9e7a858732111e5040'></script>
     <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/884234/t/6"></script>
@@ -41,10 +41,10 @@
     <br>
     <!-- Tab links -->
     <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="/gamebois/imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
-    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
-    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
-    <button class="tablinks" onclick="openTab(event, 'nds')"><img src="/gamebois/imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
+    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="./imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
+    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="./imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
+    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="./imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
+    <button class="tablinks" onclick="openTab(event, 'nds')"><img src="./imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
     <button class="tablinks" onclick="openTab(event, 'swf')"><p>Adobe Flash</p></button>
 
     </div>
@@ -92,14 +92,13 @@
     </script>
     <!-- display games-->
     <script>
-        var gameslist = []
         if (localStorage.getItem("previous") != null){
             data = JSON.parse(localStorage.getItem("previous"))
 
             var a = document.createElement("a")
             a.href = "player.html?type=" + data.type + "&game=" + data.game
             var img = document.createElement("img")
-            img.src = "/gamebois/imageAssets/" + data.type + "/" + data.game + ".png"
+            img.src = "./imageAssets/" + data.type + "/" + data.game + ".png"
             a.appendChild(img)
             var text = document.createElement("p")
             text.innerHTML = "Continue Playing:"
@@ -109,23 +108,30 @@
             quicklinks.appendChild(a)
         }
 
-        var content = [{name:"tetris", type:"gb"}, {name:"pokemon-silver", type:"gbc"}]
-        function listTitles(type){
+        var gameslist = [{name:"tetris", type:"gb"}, {name:"pokemon-silver", type:"gbc"}]
+        function listTitles(type, mode){
             var menu = document.getElementById(type)
+            var titles = []
+            //get games that match criteria
             for (let i = 0; i < gameslist.length; i++) {
-                if (gameslist[i].type == type){
-                var link = "player.html?game=" + gameslist[i].name + "&type=" + type;
-                var imageurl = "/gamebois/imageAssets/" + type + "/" + gameslist[i].name + ".png";
+                if ((mode == "type"|| mode == null) && gameslist[i].type == type){
+                    titles.push(gameslist[i])
+                }
+            }
+            //ad all games in titles list
+            for (let i = 0; i < titles.length; i++) {
+                var link = "player.html?game=" + titles[i].name + "&type=" + type;
+                var imageurl = "./imageAssets/" + titles[i].type + "/" + titles[i].name + ".png";
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
                 const img = new Image();
                 img.src = imageurl;
-                img.alt = gameslist[i].name
+                img.alt = titles[i].name
+                img.id = "thumbnail"
                 a.appendChild(img);
                 menu.appendChild(a);
                 a.className = "a"
                 img.className = "img"
-                }
             }
         }
         async function getContent(){
@@ -133,7 +139,7 @@
             const request = new Request(requestURL);
             const response = await fetch(request);
             gameslist = await response.json();
-            console.log(JSON.stringify(content))
+            console.log(JSON.stringify(gameslist))
             listTitles("gb")
             listTitles("gbc")
             listTitles("gba")
