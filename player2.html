@@ -24,7 +24,7 @@
             const gamename = new URLSearchParams(window.location.search).get('game')
             const zippedGames = ["nds", "gb", "gbc", "gba"]
             var content = {}
-            var type = ""
+            var type = "swf"
 
             function findType(name){
                 for(let i = 0; i < content.length; i++){
@@ -73,7 +73,16 @@
 
                 }
                 if (type == "swf") {
-                    var htmlstring = '<object data="https://archive.org/download/gamebois/games/swf/'+gamename+'.swf" type="application/x-shockwave-flash" width="100%" height="100%"><param name="movie" value="games/swf/'+gamename+'.swf"><param name="quality" value="high"></object>'
+                    var height = "100%"
+                    var width = "100%"
+                    if(innerWidth>innerHeight){
+                        height = "100%"
+                        width = innerHeight*(3/4)
+                    }else{
+                        height = innerWidth*(3/4)
+                        width = "100%"
+                    }
+                    var htmlstring = '<object data="https://archive.org/download/gamebois/games/swf/ultimate-flash-sonic.swf"><param name="quality" value="high"></object>'
                     document.body.innerHTML = htmlstring + document.body.innerHTML
 
                     var player = document.createElement("script")
@@ -81,7 +90,6 @@
                     document.body.appendChild(player)
                 }
             }
-
             //custom favicon
             var link = document.querySelector("link[rel~='icon']");
             if (!link) {
