@@ -5,7 +5,13 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 [gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
 
-# updates as of 11/02/22
+# updates as of 12/23/2022
+-MERRY CHRISTMAS!!!\
+-Mother 3 fan translation added\
+-classic NES games added, check them out in the GBA section!\
+-requests form has been updated\
+-a new survey aproaches!
+## 11/02/22
 -flash games added without icons
 ## 10/22/22: TMK update
 -tab icon will match the game you're playing\
