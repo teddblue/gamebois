@@ -13,7 +13,6 @@
         "saveState": "-Save State (Shift + F2)",
         "loadState": "-Load State (Shift + F4)",
         "screenRecord": "-Start Screen Recording",
-        "cacheManager": "-Cache Manager",
         "netplay": "-Netplay",
         "gamepad": "-Control Settings",
         "cheat": "-Cheats",
@@ -34,8 +33,7 @@
                 "4xScaleHQ.glslp": "-4xScaleHQ",
                 "crt-easymode.glslp": "-CRT easymode",
                 "crt-aperture.glslp": "-CRT aperture",
-                "crt-geom.glslp": "-CRT geom",
-                "crt-mattias.glslp": "-CRT mattias"
+                "crt-geom.glslp": "-CRT geom"
             },
             "default": "disabled"
         },
