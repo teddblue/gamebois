@@ -37,7 +37,6 @@
 
                 var directory = "games/";
                 var game = String(directory) + String(type) + "/" + String(gamename) + ".zip"
-                //style="margin:auto; width:auto; height:90%; max-width:100%"
 
                 EJS_startOnLoaded = true;
                 EJS_color = '#88c070'
@@ -46,6 +45,7 @@
                 EJS_gameUrl = game; // Url to Game rom
                 EJS_core = type;
                 EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
+                //EJS_AdUrl = '' //path to AD page
 
                 var player = document.createElement("script")
                 player.src = "data/loader.js"
