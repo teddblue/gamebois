@@ -20,7 +20,11 @@
         "donkey-kong-land-3" 
     ],
     "gbc" : [
-        "shante",
+        "worms-armageddon",
+        "crystalis",
+        "cannon-fodder",
+        "wacky-races",
+        "shantae",
         "links-awakening-dx", 
         "pokemon-crystal", 
         "pokemon-gold", 
@@ -40,6 +44,9 @@
         "super-mario-bros-delux"
     ],
     "gba" : [
+        "warioware-inc",
+        "worms-world-tour",
+        "super-monkey-ball-jr",
         "pokemon-radical-red",
         "pokemon-rocket",
         "pokemon-sors",
@@ -89,6 +96,7 @@
         "yoshis-island"
     ],
     "nds" : [
+        "animal-crossing-wild-world",
         "kirby-canvas-curse",
         "kirby-squeak-squad",
         "kirby-super-star-ultra",

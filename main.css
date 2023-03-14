@@ -25,6 +25,8 @@ h2 {
 }
 p {
     margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     color: var(--color4);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;

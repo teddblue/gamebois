@@ -109,18 +109,25 @@
         }
 
         var gameslist = [{name:"tetris", type:"gb"}, {name:"pokemon-silver", type:"gbc"}]
-        function listTitles(type, mode){
-            var menu = document.getElementById(type)
+        function listTitles(parent, tag){
+            var menu = document.getElementById(parent)
+            if (tag == null) {
+                tag = parent
+            }
             var titles = []
             //get games that match criteria
             for (let i = 0; i < gameslist.length; i++) {
-                if ((mode == "type"|| mode == null) && gameslist[i].type == type){
+                if (gameslist[i].tags != null){
+                    if (gameslist[i].tags.includes(tag)){
+                        titles.push(gameslist[i])
+                    }
+                } else if (gameslist[i].type == tag){
                     titles.push(gameslist[i])
                 }
             }
             //ad all games in titles list
             for (let i = 0; i < titles.length; i++) {
-                var link = "player.html?game=" + titles[i].name + "&type=" + type;
+                var link = "player.html?game=" + titles[i].name + "&type=" + titles[i].type;
                 var imageurl = "./imageAssets/" + titles[i].type + "/" + titles[i].name + ".png";
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
@@ -139,8 +146,7 @@
             const request = new Request(requestURL);
             const response = await fetch(request);
             gameslist = await response.json();
-            console.log(JSON.stringify(gameslist))
-            listTitles("gb")
+            listTitles("gb", "platformer")
             listTitles("gbc")
             listTitles("gba")
             listTitles("nds")
