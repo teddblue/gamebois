@@ -17,7 +17,7 @@
     {"name":"kirbys-dream-land", "type":"gb", "tags":["platformer"]},
     {"name":"kirbys-dream-land-2", "type":"gb", "tags":["platformer"]},
 
-    {"name":"shantae", "type":"gbc", "tags":["platformer"], "esrb":"M"},
+    {"name":"shantae", "type":"gbc", "tags":["platformer"]},
     {"name":"links-awakening-dx", "type":"gbc", "tags":["puzzle", "adventure"]},
     {"name":"pokemon-crystal", "type":"gbc", "tags":["rpg"]},
     {"name":"pokemon-gold", "type":"gbc", "tags":["rpg"]},
@@ -25,7 +25,7 @@
     {"name":"metal-gear-solid", "type":"gbc", "tags":["adventure", "stealth"]},
     {"name":"donkey-kong-country", "type":"gbc", "tags":["platformer"]},
     {"name":"dragon-warrior-1-and-2", "type":"gbc", "tags":["rpg"]},
-    {"name":"dragon-warrior-3", "type":"gbc", "tags":["rpg"]},
+    {"name":"dragon-warrior-3", "type":"gbc", "tags":["rpg"], "esrb":"T"},
     {"name":"pokemon-pinball", "type":"gbc", "tags":["puzzle", "arcade"]},
     {"name":"pokemon-trading-card-game", "type":"gbc", "tags":["puzzle"]},
     {"name":"mega-man-xtreme", "type":"gbc", "tags":["platformer"]},
@@ -85,7 +85,7 @@
     {"name":"yoshis-island", "type":"gba"},
 
 
-    {"name":"kirby-canvas-curse", "type":"nds"},
+    {"name":"kirby-canvas-curse", "type":"nds", "esrb":"T"},
     {"name":"kirby-squeak-squad", "type":"nds"},
     {"name":"kirby-super-star-ultra", "type":"nds"},
     {"name":"kirby-mass-attack", "type":"nds"},
