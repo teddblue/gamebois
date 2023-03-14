@@ -46,10 +46,10 @@
     <br>
     <!-- Tab links -->
     <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="/gamebois/imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
-    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="/gamebois/imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
-    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="/gamebois/imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
-    <button class="tablinks" onclick="openTab(event, 'nds')"><img src="/gamebois/imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
+    <button class="tablinks" onclick="openTab(event, 'gb')" id="defaultOpen"><img src="./imageAssets/consoles/GB-32x32.png" alt="Gameboy"></button>
+    <button class="tablinks" onclick="openTab(event, 'gbc')"><img src="./imageAssets/consoles/GBC-32x32.png" alt="Gameboy Color"></button>
+    <button class="tablinks" onclick="openTab(event, 'gba')"><img src="./imageAssets/consoles/GBA-32x32.png" alt="Gameboy Advance"></button>
+    <button class="tablinks" onclick="openTab(event, 'nds')"><img src="./imageAssets/consoles/NDS-32x32.png" alt="Nintendo DS"></button>
     <button class="tablinks" onclick="openTab(event, 'swf')"><p>Adobe Flash</p></button>
 
     </div>
@@ -104,7 +104,7 @@
             var a = document.createElement("a")
             a.href = "player.html?type=" + data.type + "&game=" + data.game
             var img = document.createElement("img")
-            img.src = "/gamebois/imageAssets/" + data.type + "/" + data.game + ".png"
+            img.src = "./imageAssets/" + data.type + "/" + data.game + ".png"
             a.appendChild(img)
             var text = document.createElement("p")
             text.innerHTML = "Continue Playing:"
@@ -120,7 +120,7 @@
             var gameslist = content[type]
             for (let i = 0; i < gameslist.length; i++) {
                 var link = "player.html?game=" + gameslist[i] + "&type=" + type;
-                var imageurl = "./gamebois/imageAssets/" + type + "/" + gameslist[i] + ".png";
+                var imageurl = "./imageAssets/" + type + "/" + gameslist[i] + ".png";
                 const a = document.createElement("a");
                 a.setAttribute("href", link);
                 const img = new Image();
