@@ -44,6 +44,7 @@
         "super-mario-bros-delux"
     ],
     "gba" : [
+        "banjo-pilot",
         "warioware-inc",
         "worms-world-party",
         "super-monkey-ball-jr",
@@ -96,6 +97,8 @@
         "yoshis-island"
     ],
     "nds" : [
+        "pokemon-heartgold",
+        "pokemon-soulsilver",
         "animal-crossing-wild-world",
         "kirby-canvas-curse",
         "kirby-squeak-squad",

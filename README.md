@@ -5,12 +5,14 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 [gitlab mirror, ](https://teddblue.gitlab.io/gamebois/)
 [google sites version](https://sites.google.com/view/game-bois/home)
 
-# updates as of 3/13/2023
+# updates as of 4/14/2023
+- added new gba games<br>
+
+## 3/13/2023
 - games added for gbc, gba, and nds <br>
 - new game listing system being developed <br>
 - my twitter.com has been added at the bottom of the homepage <br>
 - a newsletter has been released on gamebois' plans following recent events <br>
-
 ## 2/2/2023
 - poll results are in and you can see them below!\
 - pokemon gba hacks\

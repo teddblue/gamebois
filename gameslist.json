@@ -36,6 +36,8 @@
     {"name":"wario-land-3", "type":"gbc", "tags":["platformer"]},
     {"name":"super-mario-bros-delux", "type":"gbc", "tags":["platformer"]},
 
+    {"name":"sonic-battle", "type":"gba", "tags":["arcade"]},
+    {"name":"banjo-pilot", "type":"gba", "tags":["racing"]},
     {"name":"pokemon-radical-red", "type":"gba"},
     {"name":"pokemon-rocket", "type":"gba"},
     {"name":"pokemon-sors", "type":"gba"},
