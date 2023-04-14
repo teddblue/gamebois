@@ -10,6 +10,7 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 - added mario party ds<br>
 - added pokemon gen 2 remakes<br>
 - updated emulator js<br>
+- undid emulator js update<br>
 
 ## 3/13/2023
 - games added for gbc, gba, and nds <br>
