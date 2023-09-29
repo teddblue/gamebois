@@ -48,9 +48,11 @@ gamebois has now been out for one year! (Original August 25, current October 21)
 - obscure games???
 
 # story:
-once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit. Now cool math is blocked again.
-GitHub version estb. October 21, 2021
-Google Sites version estb. August 25, 2021
+once apon a time, cool math games was blocked at my school. now im obviously a scratch person myself, but think about it: you might not be a fan of elvis, but if he died, you would feel kinda bad about it. so i made a google site where i would collect different games and fun sites and have them all conveniently available to everyone. then cool math games was unblocked and liked making the site too much to quit. Now cool math is blocked again.\
+
+GitHub version estb. October 21, 2021\
+Google Sites version estb. August 25, 2021\
+
 # credit:
 special thanks to the people who made this stuff:
 [emulator js](https://github.com/EmulatorJS/EmulatorJS) \
